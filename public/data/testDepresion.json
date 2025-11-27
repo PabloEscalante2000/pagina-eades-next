@@ -1,0 +1,74 @@
+[
+    {
+        "titulo":"¿Has notado algún cambio en tu sueño últimamente? Marca una o más opciones",
+        "respuestas":[
+            "Sí, me despierto repentinamente por las noches, sintiéndome muy triste.",
+            "Sí, sobrepienso cosas negativas antes de irme a dormir.",
+            "Sí, se me es muy difícil conciliar el sueño por las noches.",
+            "No, no he notado ningún cambio. He tenido un sueño ligero y descansado."
+        ],
+        "tipo":"check"
+    },
+    {
+        "titulo":"¿Has notado algún cambio en tu apetito últimamente",
+        "respuestas":[
+            "Sí, últimamente tengo muchas ganas de comer, especialmente dulces y comida chatarra.",
+            "Sí, últimamente se me ha quitado el apetito, no tengo ganas de comer.",
+            "No, no he notado ningún cambio, mantengo mi dieta regular."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Realizas actividad física? (Considera las actividades como caminar, correr, o hacer ejercicio fuera)",
+        "respuestas":[
+            "No, no tengo ganas de realizar actividad física.",
+            "Regularmente.",
+            "Sí, con bastante frecuencia."  
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Te sientes constantemente agotado?",
+        "respuestas":[
+            "Sí, la mayor parte del tiempo siento como si hubiera hecho muchas actividades durante el día, a pesar de no haber hecho tanto.",
+            "Hay días en los que me siento realmente cansado, a pesar de no haber hecho mucho; y hay otros en los que tengo energías para hacer mis actividades diarias. ",
+            "No, la mayoría del tiempo tengo bastante energía para realizar mis actividades diarias."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Te cuesta hacer tus actividades por más sencillas que estas sean? ",
+        "respuestas":[
+            "Sí, casi o todos los días me cuesta salir de la cama. No tengo ganas ni siquiera de comer, de lavarme el rostro, o de bañarme.",
+            "De vez en cuando, me cuesta salir de mi cama y hacer mi rutina diaria, incluso, comer, pero, en otras ocasiones, recuerdo mis pendientes, y me armo de valor para avanzar.",
+            "No, no me cuesta realizar mis actividades, me despierto sin ningún problema."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Te cuesta concentrarte en las actividades, como leer, escuchar clases, o ver TV?",
+        "respuestas":[
+            "Sí, constantemente tengo gran dificultad para concentrarme, me pierdo en mis pensamientos o me vienen recuerdos tristes a la mente y me quedo ensimismado en ellos.",
+            "En ocasiones me sucede. Me distraigo con pensamientos o recuerdos tristes, pero luego retomo a lo que estaba haciendo. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Sientes que no eres lo suficientemente bueno en lo que haces?",
+        "respuestas":[
+            "Sí, la mayoría del tiempo siento que no sirvo para nada y que no hago nada bueno en este mundo, que soy una carga para los demás. ",
+            "En algunas ocasiones sí me siento de esa forma, que nada de lo que hago es lo suficientemente bueno o que soy una carga para otros, pero luego reflexiono y soy más autocompasivo conmigo. ",
+            "No, la verdad sé que hago lo mejor que puedo y que no siempre las cosas van a ser perfectas."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Tienes impulsos o ideas de atentar contra ti mismo?",
+        "respuestas":[
+            "Sí, casi todo el tiempo estoy pensando o tengo impulsos de hacerme daño, creo que así sentiré menos dolor interno. ",
+            "Algunas veces he tenido el impulso o he pensado en hacerlo, sin embargo, no creo que tenga el valor de ejecutarlo.",
+            "No, no he tenido el impulso o las ideas de hacerme daño, no tiene sentido para mí."
+        ],
+        "tipo":"radio"
+    }
+]

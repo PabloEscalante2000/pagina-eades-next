@@ -1,0 +1,81 @@
+[
+    {
+        "titulo":"¿De manera involuntaria visualizas recuerdos o imágenes desagradables y repetitivas de lo que te pasó?",
+        "respuestas":[
+            "No, no se me han presentado imágenes o recuerdos del suceso repentinamente. ",
+            "Se me han presentado pocas veces durante la semana.",
+            "Con frecuencia se me presentan estos recuerdos y son de manera repentina, me generan bastante dolor, quisiera que no se me aparezcan.",
+            "Sí, muchas veces durante la semana o casi siempre es bastante doloroso porque yo solo quiero olvidar todo lo pasado."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Cómo te sientes  cuando te expones a situaciones/imágenes, lugares, pensamientos, que te recuerdan al suceso? ",
+        "respuestas":[
+            "No me genera ningún malestar, es algo que he podido superar. ",
+            "A veces me he sentido mal cuando pienso o veo cosas que me recuerden el suceso. ",
+            "Me sucede bastantes veces que cuando pienso o veo cosas que me recuerdan el suceso me siento mal.",
+            "Muchas veces o casi siempre me siento mal cuando pienso o veo cosas que me recuerdan el suceso."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Experimentas reacciones fisiológicas intensas (sobresaltos, sudoración, mareos, etc.) al tener presentes pensamientos/imágenes o situaciones reales que te recuerdan al suceso? ",
+        "respuestas":[
+            "No, hasta el momento no he tenido reacciones en mi cuerpo cuando veo cosas que me recuerdan algún trauma.",
+            "A veces he sentido que mi cuerpo reacciona al pensar o ver imágenes que me recuerdan al suceso. ",
+            "Me sucede bastantes veces, mi cuerpo reacciona con sobresaltos, sudoración o mareos al pensar o ver imágenes que me recuerden al suceso. ",
+            "Sí, muchas veces o casi siempre mi cuerpo reacciona al pensar o ver imágenes que me recuerden al suceso."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Sueles evitar personas, lugares, situaciones o actividades que provocan recuerdos, pensamientos, o sentimientos relacionados con el suceso porque crea un gran malestar emocional en ti?",
+        "respuestas":[
+            "No, he continuado con mi vida de manera cotidiana, como lo hacía antes. ",
+            "A veces he evitado pasar por ciertos lugares o encontrarme a ciertas personas porque tengo miedo a cómo pueda reaccionar o a sentirme mal.",
+            "Bastantes veces he evitado encontrarme con ciertas personas o visitar ciertos lugares, he dejado de hacer ciertas actividades porque me producen recuerdos que luego me hacen sentir mal. ",
+            "Sí, muchas veces o casi siempre, he evitado ciertas situaciones, lugares, personas, porque estas me producen recuerdos que luego me hacen sentir mal. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Se te hace difícil recordar el suceso con claridad? ",
+        "respuestas":[
+            "Lo recuerdo todo perfectamente, no se me hace difícil.",
+            "Recuerdo algunas partes del suceso, aunque preferiría no recordarlo. ",
+            "No recuerdo casi nada de lo que pasó, es como si mi mente lo hubiera bloqueado."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Tienes dificultades para concentrarte, por ejemplo, seguir el hilo de una conversación o terminar tus actividades diarias?",
+        "respuestas":[
+            "No, no se me hace difícil concentrarme, puedo seguir el hilo de las conversaciones. ",
+            "A veces me distraigo, pero puedo retomar la conversación o lo que estaba haciendo sin ninguna dificultad. ",
+            "Bastantes veces me distraigo cuando estoy conversando con alguien o estoy haciendo alguna actividad, me cuesta retomar lo que estaba haciendo. ",
+            "Me sucede casi siempre, muchas veces me distraigo, no puedo concentrarme o terminar de hacer algo."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Has presentado pesadillas o has tenido mal sueño a raíz del suceso?",
+        "respuestas":[
+            "No, mi sueño ha sido relativamente tranquilo. ",
+            "A veces, he tenido problemas de sueño como insomnios, pesadillas, o dormido demás. ",
+            "Bastantes veces me pasa que tengo pesadillas o no puedo dormir por las noches. ",
+            "Me pasa casi siempre, tengo muchas pesadillas, no puedo dormir por las noches."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Crees que lo que te pasó ha interferido en tus relaciones sociales, con tu familia, tus amistades o tu pareja? ",
+        "respuestas":[
+            "No, no lo creo, tengo una buena relación con ellos. ",
+            "A veces ha interferido en mi relación con ellos, en la manera en como actúo, o gestiono mis emociones. ",
+            "Bastantes veces porque siento que no me comprenden, en mis acciones, o siento que soy una carga para ellos. ",
+            "Casi siempre siento que mi relación con ellos está deteriorada, siento que no me comprenden o que soy una carga para ellos."
+        ],
+        "tipo":"radio"
+    }
+]

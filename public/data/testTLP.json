@@ -1,0 +1,92 @@
+[
+    {
+        "titulo":"¿Crees que respondes de manera desproporcionada a situaciones adversas que te suceden?",
+        "respuestas":[
+            "Sí, la mayoría de veces siento que mis emociones se desbordan, lloro desesperadamente o me siento muy enfadada al punto de gritar o querer golpear. ",
+            "En ocasiones he sentido que mis emociones se han desbordado o he reaccionado de manera desproporcionada, pero en otras he sabido manejar la situación, mostrando mis emociones naturalmente. ",
+            "No, considero que mis respuestas emocionales son acordes a la situación. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"Al presentarse una emoción intensa, ¿lo olvidas con facilidad o te cuesta dejar de pensar en ello? ",
+        "respuestas":[
+            "En muchas ocasiones. Me cuesta olvidar los sucesos y cómo me siento respecto a ello. Si me he sentido muy molesto, puedo mantener ese estado durante muchas horas o incluso días.",
+            "A veces me cuesta olvidar los sucesos y cómo me siento respecto a ello, me puede durar horas, pero luego intento regularme y sentirme mejor. ",
+            "Sí, experimento la emoción y luego la olvido con facilidad, no pienso mucho en ello, continúo con mis actividades. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Tienes un sentido inestable o confuso sobre ti mismo, es decir, no sabes realmente en qué crees o qué piensas?",
+        "respuestas":[
+            "Sí, generalmente cuando me preguntan sobre quién soy o en qué creo, no sé realmente qué responder. Por momentos creo que soy un tipo de persona y, en otros, que soy alguien totalmente distinto, basándome la mayoría de veces en lo que las demás personas esperan de mí.",
+            "De vez en cuando se me hace difícil responder sobre quién soy o qué pienso, basándome en el resto espera de mí, sin embargo, hay ciertos aspectos de mí mismo que sí los tengo bastantes claros. ",
+            "No, considero que tengo muy en claro quién soy y mis creencias e ideales son estables."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Consideras que muchas de tus relaciones sociales son inestables e intensas? ",
+        "respuestas":[
+            "Sí, la mayoría de mis amistades o vínculos amorosos han estado caracterizados por la intensidad, los conflictos y los dramas.",
+            "Algunas de mis amistades o vínculos amorosos se han caracterizado por la intensidad, los conflictos y los dramas, pero también he tenido relaciones sociales estables y seguras.",
+            "No, al contrario, la mayoría de mis relaciones sociales como mis amistades o vínculos amorosos son estables y seguras. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Constantemente piensas que las personas que quieres te van a abandonar o se van a alejar de ti sin una razón real o concreta?  ",
+        "respuestas":[
+            "Sí, la mayoría de veces creo que las personas que quiero me van a dejar, es por eso que hago todo lo posible para evitar que me dejen, no soporto la idea de estar solo.",
+            "Lo he creído en algunas ocasiones y he hecho todo lo posible para evitar que me dejen, a veces me aterra la idea de quedarme solo.",
+            "No, no lo pienso constantemente, tampoco tengo miedo a quedarme solo."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"Has tenido alguno de estos comportamientos: gastos excesivos, relaciones sexuales de manera muy frecuente y sin protección con distintas parejas, abuso de sustancias nocivas como drogas o alcohol y/o atracones alimenticios. ",
+        "respuestas":[
+            "Sí, en muchas ocasiones he presentado alguno o muchos de estos comportamientos. Sentía la necesidad de hacerlo, y lo hacía para liberar la tensión.",
+            "De vez en cuando he tenido algunos de estos comportamientos, pero luego he tenido momentos de pausa para poder reflexionar sobre estos y cambiarlos por otros más saludables.",
+            "No, no he cometido ese tipo de excesos, siempre cuidado de mí mismo y limito mis comportamientos."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Te ha pasado que has idealizado completamente a una persona, y al observar algún defecto en ella, sientes que ya no vale la pena o pierdes totalmente el interés? ",
+        "respuestas":[
+            "Me ha pasado en muchas oportunidades que conozco a una persona, me ilusiono totalmente de esta, me siento hasta incluso enamorado, luego hace algo que no me gusta o no comparto, y deja de interesarme por completo. Puedo llegar incluso a sentir odio hacia esa persona. ",
+            "En alguna ocasión me ha pasado que me ilusiono de una persona, me gusta mucho, hace algo que no me gusta y me decepciono. Me interesa menos, pero no por completo. ",
+            "No, sinceramente, lo que hago es entender qué es lo que no me gusta de esta persona  y por qué no me gusta sin cambiar totalmente mis sentimientos hacia esta. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Has tenido arranques de ira o has actuado impulsivamente? ",
+        "respuestas":[
+            "Sí, la mayoría de veces actúo sin pensar bien en las consecuencias, y si algo no me gusta o no me parece justo, me enojo bastante, llegando al punto de explotar y tratar mal a otras personas. ",
+            "Ocasionalmente he actuado sin pensar bien en las consecuencias, o he reaccionado de manera explosiva ante situaciones que me causan enojo, pero en otras oportunidades he podido gestionar mis actitudes y pensar en las consecuencias de mis actos. ",
+            "No, la mayoría de veces pienso antes de actuar y analizo cuáles serán las consecuencias, y cuando algo no me gusta o sobrepasa mis límites, expreso mi enojo de manera asertiva. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Has tenido alguna sensación de vacío dentro de ti? ",
+        "respuestas":[
+            "Casi siempre. Es como una sensación de presión en el pecho o estómago o como si fuera un agujero enorme que no puedo describir, eso me genera mucha frustración, enojo y tristeza. ",
+            "En alguna oportunidad he tenido esa sensación, como una presión en el pecho o estómago, como si tuviera un agujero sin fondo, generándome preocupación, tristeza. ",
+            "No, nunca he tenido esa sensación. "
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Crees que todos los conceptos y formas de vida en la sociedad se caracterizan por ser bueno o malo, y que no existen los términos medios? ",
+        "respuestas":[
+            "Todo es bueno o malo, correcto o incorrecto, no hay puntos medios. Las personas hacen el bien o hacen el mal. Es negro o blanco, no existen las escalas grises, las decisiones que uno toma deben basarse en eso. Es o no es, nunca se deben dejar las cosas a medias. ",
+            "Considero que hay conceptos o formas de ser que se basan en lo bueno o malo y que las decisiones que uno tome deben regirse bajo estas limitaciones, pero hay otros conceptos y formas de ver la vida que se rigen por ambas y pueden complementarse.",
+            "Creo que las personas pueden ser ambas cosas, vivir de manera dual, encontrar lo bueno en lo malo, y lo malo en lo bueno, no es algo que se rija estrictamente entre esos dos límites."
+        ],
+        "tipo":"radio"
+    }
+]

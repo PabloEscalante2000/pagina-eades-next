@@ -1,0 +1,67 @@
+[
+    {
+        "titulo":"¿Has notado algún cambio en tu sueño últimamente? Marca una o más opciones",
+        "respuestas":[
+            "Sí, me despierto repentinamente por las noches con una sensación de que algo malo va a pasar.",
+            "Sí, últimamente he tenido pesadillas recurrentes.",
+            "Sí, sobreprienso antes de irme a dormir.",
+            "Sí, se me es muy difícil conciliar el sueño por las noches.",
+            "No, no he notado ningún cambio, he tenido un sueño ligero y descansado."
+        ],
+        "tipo":"check"
+    },
+    {
+        "titulo":"¿Has notado cambio en tu apetito últimamente?",
+        "respuestas":[
+            "Sí, últimamente tengo muchas ganas de comer, especialmente dulces y comida chatarra.",
+            "Sí, últimamente se me ha quitado el apetito, me siento llena y con náuseas.",
+            "No, no he notado ningún cambio, mantengo mi dieta regular."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Realizas actividad física? (Considere las actividades como caminar, correr, o hacer ejercicio afuera)",
+        "respuestas":[
+            "Sí, con bastante frecuencia.",
+            "La realizo regularmente.",
+            "No, no tengo tiempo para realizar actividad física."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo": "¿Cuando las cosas no están bajo tu control o son inciertas sueles mantener la calma?",
+        "respuestas":[
+            "Sí, generalmente me mantengo calmado porque sé que no puedo tener el control de todo.",
+            "En algunas ocasiones no puedo estar en calma y quiero controlar las situaciones; pero en otras que las cosas sigan su curso.",
+            "No tengo la necesidad de sentir que tengo el control de todo; dejo que las cosas sigan su curso."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Te cuesta enfocarte en tareas o actividades diarias?",
+        "respuestas":[
+            "Sí, generalemte me distraigo con otras actividades y no termino de realizar la anterior. Es como un círculo vicioso.",
+            "De vez en cuando. Hay veces en las que sí puedo concetrarme y terminar una tarea sin dificultad; en otras requiero de un esfuerzo extra para realizarlas.",
+            "No, no me cuesta. Generalmente planeo mi día y termino las actividades planificadas."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Cuando te sientes ansioso, se afecta tu capacidad de trabajar o estudiar, de relacionarte o de cuidado personal?",
+        "respuestas":[
+            "Sí, constantemente. Me siento bloqueado y se me hace muy difícil continuar con mi rutina diaria, actividades sociales y/o personales.",
+            "Me ha pasado. En ocassiones me he sentido bloqueado y se me ha hecho difícil continuar con mi rutina diaria, actividades sociales y/o personales; pero en otras he podido continuar sin ninguna dificultad.",
+            "No, he podido lidiar con mi rutina diaria sin ningún inconveniente."
+        ],
+        "tipo":"radio"
+    },
+    {
+        "titulo":"¿Sientes que tus emociones se desbordan o te sientes muy nervioso ante situaciones estresantes?",
+        "respuestas":[
+            "Sí, con frecuencia mis emociones me desbordan. Suelo llorar bastante o me enojo con mucha intensidad. Me siento tan frustrado que tengo ganas de gritar.",
+            "De vez en cuando mis emociones se han desbordado, al punto de llorar, enojarme con mucha intensidad o sentirme muy frustrado, pero en otras pocas he sabido gestionarlas.",
+            "No, usualmente suelo ser más racional y gestiono mis emociones."
+        ],
+        "tipo":"radio"
+    }
+]

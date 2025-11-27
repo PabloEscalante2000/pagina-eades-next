@@ -101,13 +101,13 @@ export default function NewNavBar() {
         </button>
         <div className={`transition-all ease-in-out duration-500 ${listaDespegable === 1 ? "h-[150px]":"h-0"} overflow-hidden `}>
           <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
-            <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/test/test-de-ansiedad" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/test/test-de-ansiedad"}>TEST DE ANSIEDAD</Link>
+            <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/test/test-de-ansiedad" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/test/ansiedad"}>TEST DE ANSIEDAD</Link>
           </li>
           <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
-            <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/test/test-de-depresion" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/test/test-de-depresion"}>TEST DE DEPRESIÓN</Link>
+            <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/test/test-de-depresion" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/test/depresion"}>TEST DE DEPRESIÓN</Link>
           </li>
           <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
-            <Link className={`hover:bg-azul hover:text-marroncito  transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/test/test-de-transtorno-de-la-personalidad-tlp" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/test/test-de-transtorno-de-la-personalidad-tlp"}>TEST DE TLP</Link>
+            <Link className={`hover:bg-azul hover:text-marroncito  transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/test/tlp" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/test/test-de-transtorno-de-la-personalidad-tlp"}>TEST DE TLP</Link>
           </li>
         </div>
         <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
@@ -174,13 +174,13 @@ export default function NewNavBar() {
           <Link className={`${pathname.startsWith("/test") ? "border-b-2 border-azul":""}`} href={"/test"}>TEST</Link>
           <ul className="absolute bg-marroncito p-0 space-y-3 transition-all duration-300 opacity-0 z-0 h-0 overflow-hidden group-hover:z-10 group-hover:opacity-100 group-hover:h-fit group-hover:p-3">
             <li>
-              <Link href={"/test/test-de-ansiedad"}>Test de Ansiedad</Link>
+              <Link href={"/test/ansiedad"}>Test de Ansiedad</Link>
             </li>
             <li>
-              <Link href={"/test/test-de-depresion"}>Test de Depresión</Link>
+              <Link href={"/test/depresion"}>Test de Depresión</Link>
             </li>
             <li>
-              <Link href={"/test/test-de-transtorno-de-la-personalidad-tlp"}>Test de TLP </Link>
+              <Link href={"/test/tlp"}>Test de TLP </Link>
             </li>
           </ul>
         </li>
