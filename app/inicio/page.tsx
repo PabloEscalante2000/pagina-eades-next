@@ -1,108 +1,19 @@
-'use client';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faClock, faMoneyBill1 } from "@fortawesome/free-regular-svg-icons"
-import { faUsers, faUserGear, faArrowAltCircleRight, faCaretRight, faDesktop, faChild} from "@fortawesome/free-solid-svg-icons"
-import { useRouter } from 'next/navigation';
-
-// Import Swiper styles
-import 'swiper/css';
-import "swiper/css/navigation";
-import NewNavBar from "@/components/NewNavBar"
-import Swal from "sweetalert2"
+import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
+import InicioButton from "@/components/InicioButton";
+import InicioPreguntas from "@/components/InicioPreguntas";
+import NewNavBarLoader from "@/components/NewNavBarLoader"
 import Image from "next/image"
-
-const preguntasFrecuentes = [
-  {
-    preg:"¿Cuanto dura cada sesión?",
-    icon:faClock,
-    res:"De 45 a 60 minutos."
-  },
-  {
-    preg:"¿Cuáles son los métodos de pago?",
-    icon:faMoneyBill1,
-    res:"Aceptamos transferencias bancarias, tarjeta de crédito (recargo del 5%)."
-  },
-  {
-    preg:"¿Cuál es la diferencia con otro tipo de terapia?",
-    icon:faUsers,
-    res:"Hacemos un seguimiento constante al paciente. El terapeuta siempre va estar dispuesto a conversar con el paciente, incluso fuera del horario de las sesiones."
-  },
-  {
-    preg:"¿Tienen tarifa social?",
-    icon:faUserGear,
-    res:"Sí, contamos con una tarifa social (además de la tarifa regular)."
-  },
-  {
-    preg:"¿La psicoterapia es online o solo presencial?",
-    icon:faDesktop,
-    res:"La terapia puede hacerce de manera online o presencial "
-  },
-  {
-    preg:"¿El centro ofrece terapia para niños/adolescentes?",
-    icon:faChild,
-    res:"Sí, gracias a la colaboración de PSERES ofrecemos servicios a niños y adolecentes."
-  }
-]
-
-const diferencias = [
-  {
-    nombre:"Seguimiento Constante",
-    img:"/virtual.jpg",
-    descripcion:"Estamos contigo en cada etapa de tu proceso terapéutico, asegurándonos de que avances de manera sostenida hacia tus objetivos"
-  },
-  {
-    nombre:"Enfoque integral",
-    img:"/enfoqueIntegral.webp",
-    descripcion:"Trabajaremos contigo de forma global, tomando en cuenta tus pensamientos, emociones, cuerpo y relaciones para lograr un equilibrio en todas las áreas de tu vida"
-  },
-  {
-    nombre:"Diseño personalizado",
-    img:"/Integral.png",
-    descripcion:"Creamos soluciones únicas, adaptadas a tus necesidades y metas específicas, porque entendemos que cada persona es diferente."
-  }
-]
-
-const serviciosPsicoterapeuticos = [
-  {
-    nombre:<>Niños</>,
-    img:"/niños2.jpg",
-    ubi:"bs-1"
-  },
-  {
-    nombre:<>Jóvenes</>,
-    img:"/jovenes.jpg",
-    ubi:"bs-1"
-  },
-  {
-    nombre:<>Adultos</>,
-    img:"/adultos2.jpg",
-    ubi:"bs-1"
-  },
-  {
-    nombre:<>Adultos<br/>Mayores</>,
-    img:"/adulto_mayor_servicio_eades.webp",
-    ubi:"bs-1"
-  },
-]
+import diferencias from "@/public/data/diferencias.json"
+import serviciosPsicoterapeuticos from "@/public/data/serviciosPsicoterapeuticos.json"
 
 function InicioPage() {
-
-  const router = useRouter();
-
-  const lanzarPregunta = (preg:string,res:string) => {
-    Swal.fire({
-      title: preg,
-      text: res,
-      icon: "question"
-    });
-  }
 
   return (
     <div className="overflow-x-hidden">
     <div className="relative">
       <div className=" top-0 left-0 z-10 w-full">
-          <NewNavBar/>
+          <NewNavBarLoader/>
       </div>
       <div className="w-full aspect-video relative max-h-[calc(100dvh-128px)]">
           <video className="absolute w-full h-full inset-0 object-cover object-top " muted loop autoPlay>
@@ -121,15 +32,11 @@ function InicioPage() {
               <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8 col-span-1">
                 <Image alt="des" src={val.img} width={400} height={400} className="w-full object-cover object-center aspect-square "/>
                 <div className="flex justify-between items-start text-4xl font-poppins text-azul sm:px-0 px-3">
-                  <h3>{val.nombre}</h3>
-                  <button className="transition-all duration-500 hover:text-marroncito"
-                  onClick={()=>{
-                    //actualizarUbi(val.ubi)
-                    router.push("/servicios")
-                  }}
-                  >
-                    <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                  </button>
+                  <h3 dangerouslySetInnerHTML={{__html:val.nombre}}/>
+                  <InicioButton
+                    child={<FontAwesomeIcon icon={faArrowAltCircleRight} />}
+                    clas={"transition-all duration-500 hover:text-marroncito"}
+                  />
                 </div>
               </aside>
             ))}
@@ -245,22 +152,20 @@ function InicioPage() {
             <Image alt="des" src="/form_terapeutica.jpg" width={384} height={384} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square"/>
             <div className="flex justify-between items-center text-4xl font-poppins text-white sm:px-0 px-3">
               <h3>Formación<br/> Psicoterapéutica</h3>
-              <button className="transition-all duration-500 hover:text-celeste" onClick={()=>{
-                router.push("/servicios")
-              }}>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} />
-              </button>
+              <InicioButton
+                child={<FontAwesomeIcon icon={faArrowAltCircleRight} />}
+                clas={"transition-all duration-500 hover:text-celeste"}
+              />
             </div>
           </aside>
           <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8 md:mt-20 lg:mt-0">
             <Image alt="des" src="/taller_evento.jpg" width={384} height={384} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square"/>
             <div className="flex justify-between items-center text-4xl font-poppins text-white sm:px-0 px-3">
               <h3>Talleres <br/> y eventos</h3>
-              <button className="transition-all duration-500 hover:text-celeste" onClick={()=>{
-                router.push("/servicios")
-              }}>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} />
-              </button>
+              <InicioButton
+                child={<FontAwesomeIcon icon={faArrowAltCircleRight} />}
+                clas={"transition-all duration-500 hover:text-celeste"}
+              />
             </div>
           </aside>
         </section>
@@ -273,23 +178,7 @@ function InicioPage() {
               objectPosition:"center"
             }}/>
           </div>
-            <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center w-fit lg:mx-0 mx-auto">
-              {preguntasFrecuentes.map((val,i) => (
-                <aside key={i} className="sm:size-52 bg-marroncito p-5 shadow-xl flex justify-around items-center sm:flex-col flex-row w-full rounded-2xl text-azul gap-5">
-                  <p className="text-center font-poppins flex-1 py-2">
-                    <FontAwesomeIcon icon={val.icon} className="text-xl"/><br/>{val.preg}
-                  </p>
-                  <button className="px-3 py-1 block font-open-sans bg-azul text-marroncito rounded-lg transition-all ease-in-out duration-500 hover:bg-celeste" 
-                  aria-label="Preguntas Frecuentes"
-                  onClick={() => lanzarPregunta(val.preg,val.res)}>
-                    <span className="sm:block hidden">Más información</span>
-                    <span className="sm:hidden block">
-                      <FontAwesomeIcon icon={faCaretRight} />
-                    </span>
-                  </button>
-                </aside>
-              ))}
-            </div>
+          <InicioPreguntas/>
         </section>
       </section>
     </div>

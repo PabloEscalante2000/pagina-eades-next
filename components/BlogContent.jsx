@@ -1,12 +1,11 @@
 "use client"
 
-import  Link  from "next";
+import  Link  from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import CommentSection from "./CommentSection";
-import NewNavBar from "./NewNavBar";
-
+import NewNavBarLoader from "./NewNavBarLoader";
 
 export default function BlogContent({ content }) {
   
@@ -56,7 +55,7 @@ export default function BlogContent({ content }) {
 
   return (
     <>
-    <NewNavBar/>
+    <NewNavBarLoader/>
     <article className="blog-content">
       <h1 id="tit-blog">{content.titulo}</h1>
       <div className="bc-intro">
@@ -99,7 +98,7 @@ export default function BlogContent({ content }) {
         );
       })}
       <span>{content.autor}</span>
-      <Link className="bc-link" to="/blog">
+      <Link className="bc-link" href={"/blog"}>
         <FontAwesomeIcon icon={faChevronLeft} /> Regresar
       </Link>
       <CommentSection id={content.id}/>

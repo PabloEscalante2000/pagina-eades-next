@@ -1,10 +1,10 @@
 import BlogContentLoader from "@/components/BlogContentLoader";
-import {content1} from "@/public/data/BlogContentData"
+import {content6} from "@/public/data/BlogContentData"
 
 function ArticuloUno () {
     return (
         <>
-            <BlogContentLoader content={content1} />           
+            <BlogContentLoader content={content6} />           
         </>
     )
 }

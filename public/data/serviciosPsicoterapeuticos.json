@@ -1,0 +1,22 @@
+[
+    {
+      "nombre":"Niños",
+      "img":"/niños2.jpg",
+      "ubi":"bs-1"
+    },
+    {
+      "nombre":"Jóvenes",
+      "img":"/jovenes.jpg",
+      "ubi":"bs-1"
+    },
+    {
+      "nombre":"Adultos",
+      "img":"/adultos2.jpg",
+      "ubi":"bs-1"
+    },
+    {
+      "nombre":"Adultos<br/>Mayores",
+      "img":"/adulto_mayor_servicio_eades.webp",
+      "ubi":"bs-1"
+    }
+  ]

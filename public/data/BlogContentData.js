@@ -1,16 +1,10 @@
-import img1 from "/depresion-blog-eades.jpeg"
-import img2 from "/eades-tlp-blog.jpeg"
-import img3 from "/ataque-de-panico-eades-blog.jpeg"
-import img4 from "/agotamiento-emocional-eades-blog.jpeg"
-import img7 from "/ansiedad_eades_blog.jpg"
-
 export const content1 = {
   id:1,
   titulo:"Depresión: Enfermedad emocional epidémica no transmisible",
   introduccion:[
     "La depresión es la enfermedad emocional epidémica no transmisible en la actualidad. Según cifras de la Organización Mundial de la Salud, es padecido por el 3,8% de la población mundial, afectando principalmente a las mujeres (2023). Felizmente, existen tratamientos eficaces para esta, sea del tipo leve, moderada o grave, y en el presente artículo te comentaremos sobre los modos de abordarla, además de sus causas y principales características, a fin de que puedas identificar si estás atravesando por este cuadro clínico."
   ],
-  img:img1,
+  img:"/depresion-blog-eades.jpeg",
   youtube:null,
   bloques:[
     {
@@ -84,7 +78,7 @@ export const content2 = {
     "Como ya adelantamos en el artículo «La personalidad y sus trastornos»; los trastornos de personalidad se pueden definir como una forma de pensar, sentir y comportarse que interfiere de manera muy significativa en muchas de las áreas de la vida de la persona afectada.",
     "Esta manera de interpretar la vida y actuar ante el mundo es inflexible y desadaptativa, por lo que ocasiona graves problemas tanto para la persona que lo padece como para las que conviven con ella.",
   ],
-  img: img2,
+  img: "/eades-tlp-blog.jpeg",
   youtube:null,
   bloques: [
     {
@@ -153,7 +147,7 @@ export const content3 = {
   introduccion: [
     "El ataque de pánico o crisis de ansiedad es una condición que afecta a la percepción y a la vida de la persona que lo padece. De este modo, cuando se sufre de este trastorno de pánico acaban generando una experiencia de miedo intenso que se experimenta durante un tiempo delimitado. Además aparece de una forma inesperada haciendo que las personas puedan acabar teniendo desmayos por ansiedad e incluso entrar en un pánico casi absoluto.",
   ],
-  img: img3,
+  img: "/ataque-de-panico-eades-blog.jpeg",
   youtube:null,
   bloques: [
     {
@@ -286,7 +280,7 @@ export const content4 = {
     "¿Sientes que estás siempre cansado? ¿Crees que tu cansancio te está afectando en tu día a día? Descubre los síntomas del agotamiento emocional y cómo afrontarlo a través de la psicología.",
     "El cansancio emocional o el agotamiento emocional suelen surgir a causa de un período de estrés excesivo que puede ser debido tanto por una época de demasiado trabajo o de presión personal. En el momento en que las personas experimentan una fatiga emocional estas pueden sentirse agotadas, abrumadas y muy cansadas. Es por ello que la mayoría de individuos que padecen del agotamiento y sus síntomas, acaban viéndose perjudicadas en su entorno personal y laboral.",
   ],
-  img: img4,
+  img: "/agotamiento-emocional-eades-blog.jpeg",
   youtube:null,
   bloques: [
     {
@@ -419,7 +413,7 @@ export const content5 = {
     "Sabes en qué consisten los trastornos de la personalidad? ¿Crees que padeces de un desorden mental? Descubre los diferentes tipos de trastornos de la personalidad y a cómo identificarlos.",
     "Un trastorno de la personalidad es una de las enfermedades mentales que más puede condicionar la vida de aquellos que lo padecen. De esta forma, estas enfermedades mentales pueden deben ser diagnosticadas y tratadas con la ayuda de profesionales de la salud mental. Descubre cómo identificarles y cuáles son las más comunes.",
   ],
-  img: img1,
+  img: "/depresion-blog-eades.jpeg",
   youtube:null,
   bloques: [
     {
@@ -601,7 +595,7 @@ export const content7 = {
   introduccion: [
     "La ansiedad aparece como una señal de que algo nos está molestando. Puede manifestarse a través de preocupaciones, miedo y tensión en el cuerpo. Entender que la ansiedad es una respuesta a conflictos internos no resueltos es el primer paso para empezar a controlarla. Aceptar que estos sentimientos provienen de dentro de nosotros mismos nos permite empezar a trabajar en ellos.",
   ],
-  img:img7,
+  img:"/ansiedad_eades_blog.jpg",
   youtube:null,
   bloques:[
     {

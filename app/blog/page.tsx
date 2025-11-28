@@ -1,5 +1,5 @@
 import {blog1,blog2,blog3,blog4,blog5,blog6,blog7} from '@/public/data/BlogData'
-import NewNavBar from "@/components/NewNavBar"
+import NewNavBarLoader from "@/components/NewNavBarLoader"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -9,7 +9,7 @@ export default function BlogPage() {
 
   return (
     <>
-    <NewNavBar/>
+    <NewNavBarLoader/>
     <section className="grid grid-cols-1 sm:p-10 p-5 gap-10">
       <section className="col-span-3 space-y-10 gap-10">
         <div className="w-full gap-6 flex flex-col justify-center">

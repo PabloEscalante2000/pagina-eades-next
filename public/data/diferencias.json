@@ -1,0 +1,17 @@
+[
+    {
+      "nombre":"Seguimiento Constante",
+      "img":"/virtual.jpg",
+      "descripcion":"Estamos contigo en cada etapa de tu proceso terapéutico, asegurándonos de que avances de manera sostenida hacia tus objetivos"
+    },
+    {
+      "nombre":"Enfoque integral",
+      "img":"/enfoqueIntegral.webp",
+      "descripcion":"Trabajaremos contigo de forma global, tomando en cuenta tus pensamientos, emociones, cuerpo y relaciones para lograr un equilibrio en todas las áreas de tu vida"
+    },
+    {
+      "nombre":"Diseño personalizado",
+      "img":"/Integral.png",
+      "descripcion":"Creamos soluciones únicas, adaptadas a tus necesidades y metas específicas, porque entendemos que cada persona es diferente."
+    }
+  ]

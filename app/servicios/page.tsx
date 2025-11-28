@@ -1,5 +1,3 @@
-"use client"
-
 import servicios from "@/public/data/servicios.json"
 import NewNavBar from "@/components/NewNavBar";
 import BloqServicio from "@/components/BloqServicio";

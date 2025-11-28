@@ -34,7 +34,7 @@ export const blog5 = {
 }
 
 export const blog6 = {
-    url:"/blog/primer-congreso-interancional-eades",
+    url:"/blog/primer-congreso-internacional-eades",
     nombre:"1er Congreso Internacional EADES",
     descrpcion:"El 16 de noviembre se llevó a cabo el 1er. Congreso Internacional EADES 2019, en el que se expusieron grandes temas como: La Alexitimia, del Trauma Complejo a la Psicosis, la depresión y la ansiedad, la experiencia en la Musicoterapia, entre otros temas de gran relevancia. Las ponencias estuvieron a cargo del Psicoterapeuta César Escalante, la Médico Psiquiatra Sonia Morales, el Psicólogo Mauricio Díaz y el músicoterapeuta Hugo Huanqui, quiénes nos expusieron acerca de conceptos, conocimientos y experiencias en el área de la psicología, psiquiatría y la musicoterapia.",
     img_url:"/congreso-internacional-eades.jpg"
