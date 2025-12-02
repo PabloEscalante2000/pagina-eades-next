@@ -14,7 +14,9 @@ const nextConfig: NextConfig = {
       }
     ]
   },
-  output:"export" 
+  output:"export",
+  basePath:"/",
+  assetPrefix: "./"
 };
 
 export default nextConfig;
