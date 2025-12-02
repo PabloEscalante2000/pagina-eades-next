@@ -4,6 +4,12 @@ import CarruselProfLg from "@/components/CarruselProfLg"
 import Image from "next/image"
 import styles from "./page.module.css"
 
+export const metadata = {
+  title: "EADES | Centro Psicoterapéutico | Quiénes Somos",
+  description: "EADES — Equipo de psicólogos expertos en salud mental: conocé a nuestros profesionales, misión y valores. Compromiso con la salud emocional, confidencialidad y cuidado integral. Descubre por qué somos tu mejor opción para acompañarte en tu proceso terapéutico.",
+};
+
+
 function QuienesSomosPage() {
 
   return (

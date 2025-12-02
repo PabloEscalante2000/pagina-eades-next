@@ -3,6 +3,11 @@ import NewNavBarLoader from "@/components/NewNavBarLoader"
 import Link from "next/link"
 import Image from "next/image"
 
+export const metadata = {
+  title: "EADES | Centro Psicoterapéutico | Quiénes Somos",
+  description: "Blog EADES: artículos sobre psicología, salud mental, bienestar emocional y desarrollo personal. Consejos, reflexiones y contenido profesional para ayudarte a crecer, sanar y conocerte mejor. Información confiable para tu salud mental.",
+};
+
 export default function BlogPage() {
 
   const array = [blog1,blog2,blog3,blog4,blog5,blog6,blog7]

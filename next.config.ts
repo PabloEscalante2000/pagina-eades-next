@@ -13,7 +13,8 @@ const nextConfig: NextConfig = {
         hostname:"i.pinimg.com"
       }
     ]
-  }
+  },
+  output:"export" 
 };
 
 export default nextConfig;
