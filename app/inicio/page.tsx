@@ -30,7 +30,7 @@ function InicioPage() {
           <div className="w-full 2xl:space-y-0 lg:gap-16 gap-10 grid lg:grid-cols-4 md:grid-cols-2 md:mx-auto">
             {serviciosPsicoterapeuticos.map((val,i) => (
               <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8 col-span-1">
-                <Image alt="des" src={val.img} width={400} height={400} className="w-full object-cover object-center aspect-square "/>
+                <Image alt="servicios psicoterapeuticos" src={val.img} width={400} height={400} className="w-full object-cover object-center aspect-square "/>
                 <div className="flex justify-between items-start text-4xl font-poppins text-azul sm:px-0 px-3">
                   <h3 dangerouslySetInnerHTML={{__html:val.nombre}}/>
                   <InicioButton
@@ -40,7 +40,7 @@ function InicioPage() {
                 </div>
               </aside>
             ))}
-            
+           
           </div>
         </section>
     </section>

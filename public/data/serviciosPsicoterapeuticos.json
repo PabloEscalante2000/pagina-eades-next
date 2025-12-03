@@ -1,7 +1,7 @@
 [
     {
       "nombre":"Niños",
-      "img":"/niños2.jpg",
+      "img":"/ninos2.jpg",
       "ubi":"bs-1"
     },
     {
@@ -19,4 +19,4 @@
       "img":"/adulto_mayor_servicio_eades.webp",
       "ubi":"bs-1"
     }
-  ]
+]
