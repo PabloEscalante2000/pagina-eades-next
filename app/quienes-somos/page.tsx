@@ -19,7 +19,7 @@ function QuienesSomosPage() {
         height:"calc(100dvh - 128px)"
       }}>
         <div className="relative basis-7/12 bg-red-50 md:min-h-[400px] min-h-64">
-          <Image width={1900} height={1900} src="/quienes_somos_port.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
+          <Image width={1900} height={1900} src="/form_terapeutica.jpg" className="absolute inset-0 size-full object-cover" alt="EADES" style={{
             objectPosition:"50% 35%"
           }}/>
         </div>

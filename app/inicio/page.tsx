@@ -169,12 +169,12 @@ function InicioPage() {
             </div>
           </aside>
         </section>
-        </section> 
+        </section>
       <section className="space-y-5 py-5 sm:py-10">
         <h2 className="text-azul text-4xl font-open-sans sm:px-10 px-5">Preguntas Frecuentes</h2>
         <section className="grid gap-10 lg:grid-cols-2 grid-cols-1 justify-center items-center md:justify-stretch md:items-stretch sm:p-16 p-10">
           <div className="flex justify-center items-center">
-            <Image alt="des" src="/preguntas_frecuentes.jpg" width={600} height={800} className="w-full object-cover object-center rounded-r-2xl 2xl:h-full lg:h-2/3" style={{
+            <Image alt="des" src="/preguntas_frecuentes_v2.png" width={600} height={800} className="w-full object-cover object-center rounded-r-2xl 2xl:h-full lg:h-2/3" style={{
               objectPosition:"center"
             }}/>
           </div>
