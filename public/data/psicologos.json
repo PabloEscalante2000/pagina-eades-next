@@ -1,7 +1,7 @@
 [
    {
       "nombre":"Mg. César Escalante",
-      "cpp":"CPsP:29611",
+      "cpp":"CPsP:66725",
       "datos":[
       "Psicólogo Clínico con Maestría en Neuropsicología.",
       "Psicoterapeuta psicoanalítico con expertiz en trastorno de la personalidad, depresión y ansiedad.",
@@ -21,6 +21,7 @@
   },
   {
     "nombre":"Kevin Cubas",
+    "cpp":"CPsP:29611",
     "datos":[
       "Psicólogo Clínico.",
       "Bases en la terapia cognitivo conductual.",
