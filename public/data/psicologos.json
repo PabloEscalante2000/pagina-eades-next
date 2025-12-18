@@ -18,5 +18,14 @@
       "Docente en teoría psicoanalítica en Grupo EADES."
     ],
     "img_url":"/melissa_psi.jpg"
+  },
+  {
+    "nombre":"Kevin Cubas",
+    "datos":[
+      "Psicólogo Clínico.",
+      "Bases en la terapia cognitivo conductual.",
+      "Cursos de especialización en técnicas de entrevisata, diagnóstico, intervención y tratamiento en psicología de adultos, así como en niños y adolescentes con TEA"
+    ],
+    "img_url":"/kevin_cubas.jpg"
   }
 ]

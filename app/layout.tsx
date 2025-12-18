@@ -3,6 +3,7 @@ import { poppins, openSans, breathing } from "./fonts";
 import Footer from "@/components/Footer"
 
 import "./globals.css";
+import PromoPopup from "@/components/PromoPopUp";
 
 export const metadata : Metadata = {
   title: "EADES | Centro Psicoterapéutico",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body>
         {children}
         <Footer/>
+        <PromoPopup/>
       </body>
     </html>
   );
