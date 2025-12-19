@@ -1,32 +1,32 @@
 [
-   {
-      "nombre":"Mg. César Escalante",
-      "cpp":"CPsP:66725",
-      "datos":[
+  {
+    "nombre": "Mg. César Escalante",
+    "cpp": "CPsP:29611",
+    "datos": [
       "Psicólogo Clínico con Maestría en Neuropsicología.",
       "Psicoterapeuta psicoanalítico con expertiz en trastorno de la personalidad, depresión y ansiedad.",
       "Formación en Terapia Sistémica Familiar.",
       "Docente universitario y asesor en temas de investigación clínica.",
       "Autor de diversos textos de investigación."
-      ],
-      "img_url":"/fundador.jpeg"
+    ],
+    "img_url": "/cesar_new-min.webp"
   },
   {
-    "nombre":"Melissa Alejandra Huaman Sánchez",
-    "datos":[
+    "nombre": "Melissa Alejandra Huaman Sánchez",
+    "datos": [
       "Facilitadora Psicoterapéutica Psicoanalítica.",
       "Docente en teoría psicoanalítica en Grupo EADES."
     ],
-    "img_url":"/melissa_psi.jpg"
+    "img_url": "/melissa_new.webp"
   },
   {
-    "nombre":"Kevin Cubas",
-    "cpp":"CPsP:29611",
-    "datos":[
+    "nombre": "Kevin Cubas",
+    "cpp": "CPsP:66725",
+    "datos": [
       "Psicólogo Clínico.",
       "Bases en la terapia cognitivo conductual.",
       "Cursos de especialización en técnicas de entrevisata, diagnóstico, intervención y tratamiento en psicología de adultos, así como en niños y adolescentes con TEA"
     ],
-    "img_url":"/kevin_cubas.jpg"
+    "img_url": "/kevin_cubas.jpg"
   }
 ]

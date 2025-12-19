@@ -2,18 +2,18 @@
 
 :root {
   --azul-oscuro: #41588e;
-  --azul-claro:#41588e;
-  --celeste:#b0c4df;
-  --blanco:#ffffff;
-  --beige:#f0edea;
-  --xsmall:12px;
-  --small:16px;
-  --xxmedium:18px;
-  --xmedium:24px;
-  --medium:32px;
-  --big:48px;
-  --xbig:60px;
-  --xxbig:72px;
+  --azul-claro: #41588e;
+  --celeste: #b0c4df;
+  --blanco: #ffffff;
+  --beige: #f0edea;
+  --xsmall: 12px;
+  --small: 16px;
+  --xxmedium: 18px;
+  --xmedium: 24px;
+  --medium: 32px;
+  --big: 48px;
+  --xbig: 60px;
+  --xxbig: 72px;
 }
 
 @font-face {
@@ -67,13 +67,13 @@
 }
 
 @theme {
-  --color-azul:#41588e;
-  --color-celeste:#b0c4df;
-  --color-marroncito:#f0edea;
+  --color-azul: #41588e;
+  --color-celeste: #b0c4df;
+  --color-marroncito: #f0edea;
   --color-azul-oscuro: #41588e;
-  --color-azul-claro:#41588e;
-  --color-blanco:#ffffff;
-  --color-beige:#f0edea;
+  --color-azul-claro: #41588e;
+  --color-blanco: #ffffff;
+  --color-beige: #f0edea;
   --font-poppins: "Poppins-Regular" sans-serif;
   --font-poppins-light: "Poppins-Light", sans-serif;
   --font-poppins-bold: "Open-Sans-Bold", sans-serif;
@@ -82,8 +82,6 @@
   --font-open-sans-bold: "Open-Sans-Bold", sans-serif;
   --font-breathing: "Breathing", sans-serif;
 }
-
-
 
 @media (max-width: 700px) {
   body .qb-inicio-video iframe {
@@ -513,21 +511,26 @@
   color: var(--azul-claro);
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   body .pri-qs h1 {
-      font-size: var(--medium);
+    font-size: var(--medium);
   }
 
   body .psi-data img {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
 }
 
 .pri-qs {
   padding: 50px;
   min-height: 500px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(/eades_local_consultorio-min.JPG);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(/eades_local_consultorio-min.JPG);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -616,11 +619,6 @@
   border-radius: 30px;
 }
 
-.psi-data .melissa-img {
-  object-position: center;
-  object-fit: cover;
-}
-
 .psi-data .mateo-img {
   object-position: top;
   object-fit: contain;
@@ -698,24 +696,29 @@
   background-color: purple;
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   body .pri-serv h1 {
-      font-size: var(--medium);
+    font-size: var(--medium);
   }
 
   body .pri-serv aside {
-      grid-template-columns: 100px 100px;
-      grid-template-rows:  100px 100px;
-      gap: 10px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
   }
 
   body .pri-serv aside div {
-      font-size: var(--xsmall);
+    font-size: var(--xsmall);
   }
 }
 
 .pri-serv {
-  background-image: linear-gradient(to bottom, rgba(240,237,234,0.8), rgba(240,237,234,0.0)), url(/servicios_port.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(240, 237, 234, 0.8),
+      rgba(240, 237, 234, 0)
+    ),
+    url(/servicios_port.jpg);
 }
 
 .img-serv {
@@ -744,7 +747,7 @@
   transition: all 1s ease;
 }
 
-.disapear { 
+.disapear {
   transform: translateY(50px);
   opacity: 0;
 }
@@ -805,13 +808,13 @@
 }
 
 /* BloqueTest.css */
-@media (max-width:550px) {
+@media (max-width: 550px) {
   body .section-test form > div {
-      width: 300px;
+    width: 300px;
   }
 
   body .section-test h1 {
-      font-size: var(--xmedium);
+    font-size: var(--xmedium);
   }
 }
 
@@ -873,7 +876,6 @@
   position: relative;
   padding-left: 50px;
   position: relative;
-  
 }
 
 input[type="radio"],
@@ -889,7 +891,7 @@ input[type="checkbox"] {
 }
 
 input[type="radio"] + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -910,7 +912,7 @@ input[type="radio"]:checked + label::before {
 
 /* Estilo para la bolita del checkbox */
 input[type="checkbox"] + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -935,7 +937,8 @@ input[type="checkbox"]:checked + label::before {
   font-size: var(--small);
 }
 
-.section-test label, .section-test input {
+.section-test label,
+.section-test input {
   cursor: pointer;
 }
 
@@ -1116,15 +1119,15 @@ input[type="checkbox"]:checked + label::before {
   font-size: var(--small);
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
   body .comment-card {
-      max-width: 400px;
+    max-width: 400px;
   }
 }
 
-@media (max-width:560px) {
+@media (max-width: 560px) {
   body .comment-sec textarea {
-      width: 200px;
+    width: 200px;
   }
 }
 
@@ -1158,7 +1161,7 @@ input[type="checkbox"]:checked + label::before {
   width: 400px;
 }
 
-.comment-sec form  button {
+.comment-sec form button {
   background-color: transparent;
   border: 1px solid var(--azul-oscuro);
   cursor: pointer;
@@ -1179,7 +1182,6 @@ input[type="checkbox"]:checked + label::before {
   color: var(--azul-oscuro);
   font-family: "Open-Sans-Medium";
   font-size: var(--xxmedium);
-
 }
 
 .comment-card {
