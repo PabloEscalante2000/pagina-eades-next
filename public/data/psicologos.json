@@ -28,5 +28,15 @@
       "Cursos de especialización en técnicas de entrevista, diagnóstico, intervención y tratamiento en psicología de adultos, así como en niños y adolescentes con TEA"
     ],
     "img_url": "/kevin_cubas.jpg"
+  },
+  {
+    "nombre":"Mayra Chávez",
+    "cpp":"CPsP:67433",
+    "datos":[
+      "Psicóloga especializada en la atención de niños y adolescentes.",
+      "Enfoque terapéutico basado en el juego libre.",
+      "Fomento de la autorregulación y conciencia emocional."
+    ],
+    "img_url":"/mayra_psi.png"
   }
 ]

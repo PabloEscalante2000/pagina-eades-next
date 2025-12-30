@@ -10,14 +10,6 @@ function CarruselProfSm() {
 
   const [psi, setPsi] = useState(0)
 
-  const psiImageClasses = [
-    "cesar-img",
-    "mateo-img",
-    "mayte-img",
-    "melissa-img",
-    "naty-img"
-  ];
-
   //State derivado
   const psicologo = psicologos[psi]
 
@@ -40,7 +32,7 @@ function CarruselProfSm() {
         <section className={"flex justify-center items-center gap-5"}>
           <span onClick={backPsi} className={`text-azul text-[32px] pb-5 ${psi <= 0 ? "text-gray-500 cursor-default" : ""} `}><FontAwesomeIcon icon={faArrowLeft} /></span>
           <section className={"psi-data"}>
-            <Image width={300} height={300} src={psicologo.img_url} alt={psicologo.nombre} className={psiImageClasses[psi] || "cesar-img"} />
+            <Image width={300} height={300} src={psicologo.img_url} alt={psicologo.nombre} className={""} />
             <aside>
               <h3>{psicologo.nombre}</h3>
               <em>{psicologo?.cpp}</em>
