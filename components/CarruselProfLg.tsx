@@ -32,7 +32,7 @@ function CarruselProfSm() {
         <section className={"flex justify-center items-center gap-5"}>
           <span onClick={backPsi} className={`text-azul text-[32px] pb-5 ${psi <= 0 ? "text-gray-500 cursor-default" : ""} `}><FontAwesomeIcon icon={faArrowLeft} /></span>
           <section className={"psi-data"}>
-            <Image width={300} height={300} src={psicologo.img_url} alt={psicologo.nombre} className={""} />
+            <Image width={300} height={300} src={psicologo.img_url} alt={psicologo.nombre} className={`${psi === 5 ? "object-[110%_30%]!": psi === 0 ? "object-[100%_60%]!":""}`} />
             <aside>
               <h3>{psicologo.nombre}</h3>
               <em>{psicologo?.cpp}</em>

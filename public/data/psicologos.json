@@ -12,12 +12,14 @@
     "img_url": "/cesar_new-min.webp"
   },
   {
-    "nombre": "Melissa Alejandra Huaman Sánchez",
+    "nombre": "Mayra Chávez",
+    "cpp": "CPsP:67433",
     "datos": [
-      "Facilitadora Psicoterapéutica Psicoanalítica.",
-      "Docente en teoría psicoanalítica en Grupo EADES."
+      "Psicóloga especializada en la atención de niños y adolescentes.",
+      "Enfoque terapéutico basado en el juego libre.",
+      "Fomento de la autorregulación y conciencia emocional."
     ],
-    "img_url": "/melissa_new.webp"
+    "img_url": "/mayra_psi.jpeg"
   },
   {
     "nombre": "Kevin Cubas",
@@ -30,13 +32,28 @@
     "img_url": "/kevin_cubas.jpg"
   },
   {
-    "nombre": "Mayra Chávez",
-    "cpp": "CPsP:67433",
-    "datos": [
-      "Psicóloga especializada en la atención de niños y adolescentes.",
-      "Enfoque terapéutico basado en el juego libre.",
-      "Fomento de la autorregulación y conciencia emocional."
+    "nombre":"Catherin Cermeño Durand",
+    "cpp":"CPsP:35863",
+    "datos":[
+      "Psicóloga clínica y psicoterapeuta psicoanalítica",
+      "Participación en proyectos de salud mental e intervención en contextos comunitarios con poblaciones vulnerables."
     ],
-    "img_url": "/mayra_psi.jpeg"
+    "img_url":"/catherin_eades.jpg"
+  },
+  {
+    "nombre": "Melissa Alejandra Huaman Sánchez",
+    "datos": [
+      "Facilitadora Psicoterapéutica Psicoanalítica.",
+      "Docente en teoría psicoanalítica en Grupo EADES."
+    ],
+    "img_url": "/melissa_new.webp"
+  },
+  {
+    "nombre":"Valeria Arbulú",
+    "datos":[
+      "Facilitadora Psicoterapéutica Psicoanalítica.",
+      "Docente de teoría psicoanalítica en Grupo EADES."
+    ],
+    "img_url":"/valeria.jpg"
   }
 ]

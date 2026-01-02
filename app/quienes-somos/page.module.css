@@ -97,7 +97,7 @@
   color: gray;
   cursor: default;
 }
-
+/* 
 .psi-data img {
   width: 350px;
   height: 350px;
@@ -151,7 +151,7 @@
   font-family: "Open-Sans-Regular";
   font-size: var(--small);
   color: var(--azul-claro);
-}
+} */
 
 .clave-psi {
   padding: 20px;
