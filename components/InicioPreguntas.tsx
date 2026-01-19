@@ -52,20 +52,21 @@ export default function InicioPreguntas() {
     }
 
     return (
-        <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-center w-fit lg:mx-0 mx-auto">
+        <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-start w-fit lg:mx-0 mx-auto">
             {preguntasFrecuentes.map((val,i) => (
-            <aside key={i} className="sm:size-52 bg-marroncito p-5 shadow-xl flex justify-around items-center sm:flex-col flex-row w-full rounded-2xl text-azul gap-5">
+            <aside key={i} className="bg-marroncito p-5 shadow-xl flex justify-around items-center flex-col w-full rounded-2xl text-azul gap-5">
                 <p className="text-center font-poppins flex-1 py-2">
                 <FontAwesomeIcon icon={val.icon} className="text-xl"/><br/>{val.preg}
                 </p>
-                <button className="px-3 py-1 block font-open-sans bg-azul text-marroncito rounded-lg transition-all ease-in-out duration-500 hover:bg-celeste" 
+                {/* <button className="px-3 py-1 block font-open-sans bg-azul text-marroncito rounded-lg transition-all ease-in-out duration-500 hover:bg-celeste" 
                 aria-label="Preguntas Frecuentes"
                 onClick={() => lanzarPregunta(val.preg,val.res)}>
                 <span className="sm:block hidden">Más información</span>
                 <span className="sm:hidden block">
                     <FontAwesomeIcon icon={faCaretRight} />
                 </span>
-                </button>
+                </button> */}
+                <p className="text-center">{val.res}</p>
             </aside>
             ))}
         </div>

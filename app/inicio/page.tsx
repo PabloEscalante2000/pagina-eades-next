@@ -6,6 +6,7 @@ import NewNavBarLoader from "@/components/NewNavBarLoader"
 import Image from "next/image"
 import diferencias from "@/public/data/diferencias.json"
 import serviciosPsicoterapeuticos from "@/public/data/serviciosPsicoterapeuticos.json"
+import Link from "next/link";
 
 function InicioPage() {
 
@@ -99,11 +100,11 @@ function InicioPage() {
             <Image src="/kora.png" width={200} height={80} alt="KORA" />
           </div>
           <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
-            <Image src="/ites.jpeg" width={200} height={80} alt="NOÉTICA" />
+            <Image src="/assets/logo_itas.png" width={200} height={80} alt="ITAS" />
           </div>
-          <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
-            <Image src="/pseres.png" width={200} height={80} alt="pseres" />
-          </div>
+          <Link className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5" href={"https://pseres.pe/"} rel="noopener noreferrer" target="_blank">
+            <Image src="/pseres.png" className="cursor-pointer" width={200} height={80} alt="pseres" rel="noopener noreferrer"  />
+          </Link>
           {/* <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
             <Image src="/yachay.png" width={200} height={80} alt="Yachay" />
           </div> */}
