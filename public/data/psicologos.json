@@ -1,13 +1,14 @@
 [
   {
-    "nombre": "Mayra Chávez",
-    "cpp": "CPsP:67433",
+    "nombre": "César Escalante",
+    "img_url": "/assets/cesar_new-min.webp",
+    "cpp": "CPsP: 29611",
     "datos": [
-      "Psicóloga especializada en la atención de niños y adolescentes.",
-      "Enfoque terapéutico basado en el juego libre.",
-      "Fomento de la autorregulación y conciencia emocional."
-    ],
-    "img_url": "/mayra_psi.jpeg"
+      "Psicólogo clínico con Maestría en Neuropsicología",
+      "Psicoterapeuta psicoanalítico con expertiz en transtorno de la personalidad, depresión y ansiedad",
+      "Formación en Terapia Sistemática Familiar",
+      "Docente universitario y asesor en temas de investigacion clínica"
+    ]
   },
   {
     "nombre": "Kevin Cubas",
