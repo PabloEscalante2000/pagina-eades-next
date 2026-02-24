@@ -1,6 +1,7 @@
 import servicios from "@/public/data/servicios.json"
 import NewNavBar from "@/components/NewNavBar";
 import BloqServicio from "@/components/BloqServicio";
+import Image from "next/image";
 
 export const metadata = {
   title: "EADES | Centro Psicoterapéutico | Servicios",
@@ -26,6 +27,35 @@ function ServiciosPage() {
         {servicios.slice(4,6).map((serv,i) => (
           <BloqServicio key={i} servicio={serv} num={i % 2 === 0 ? 1:3}/>
         ))}
+      </section>
+      <section className="bg-marroncito">
+        <div className="max-w-[1200px] mx-auto sm:px-10 px-5 sm:py-16 py-10 flex md:flex-row flex-col gap-10 items-start">
+          <Image
+            src="/CesarEscalante.webp"
+            alt="César Escalante Sifuentes"
+            width={320}
+            height={320}
+            className="w-72 h-72 object-cover object-top rounded-lg flex-none"
+          />
+          <div className="space-y-4">
+            <div>
+              <p className="font-poppins text-sm font-semibold text-azul/70 uppercase tracking-widest mb-1">Dirección Clínica</p>
+              <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul">César Escalante</h2>
+              <p className="font-open-sans text-base text-azul/80 mt-1">Director de EADES &mdash; Más de 25 años de experiencia en educación y salud mental.</p>
+            </div>
+            <div className="space-y-3 border-l-4 border-azul pl-6">
+              <p className="font-open-sans text-lg text-azul">
+                Neuropsicólogo y psicoterapeuta con formación en Terapia Cognitivo-Conductual, Psicoanálisis y Terapia Sistémico-Familiar.
+              </p>
+              <p className="font-open-sans text-lg text-azul">
+                Su trayectoria le permite integrar distintos enfoques clínicos según las necesidades de cada caso, evitando intervenciones rígidas o reduccionistas.
+              </p>
+              <p className="font-open-sans text-lg text-azul">
+                Supervisa todos los procesos terapéuticos del centro, garantizando coherencia, profundidad y criterio clínico en cada tratamiento.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   )

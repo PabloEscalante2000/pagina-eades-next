@@ -1,6 +1,6 @@
 "use client"
 
-import { faWhatsapp, faSquareFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -115,41 +115,20 @@ export default function NewNavBar() {
         </li>
       </ul>
       </section>
-      <section className="flex justify-end gap-2 text-xl p-5 ">
-        <a 
-          target="_blank" 
-          href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." 
+      <section className="flex justify-center p-5">
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..."
           aria-label="Whatsapp"
-          className="hover:text-celeste transition-all duration-500"
-        > 
-          <FontAwesomeIcon icon={faWhatsapp}/> 
-        </a>
-        <a
-          target="_blank" href="https://www.facebook.com/EADESPeru" aria-label="Facebook"
-          className="hover:text-celeste transition-all duration-500"
+          className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2 rounded-full transition-all duration-300 w-full justify-center"
         >
-          <FontAwesomeIcon icon={faSquareFacebook} />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/eadespsicoterapia/"
-          aria-label="Instagram"
-          className="hover:text-celeste transition-all duration-500"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/@eadespsicoterapia"
-          aria-label="Youtube"
-          className="hover:text-celeste transition-all duration-500"
-        >
-          <FontAwesomeIcon icon={faYoutube} />
+          <FontAwesomeIcon icon={faWhatsapp} className="text-xl"/>
+          <span>WhatsApp</span>
         </a>
       </section>
     </nav>
     <header className="flex justify-between items-center gap-5 sm:px-10 px-5  font-poppins w-full bg-marroncito text-azul">
-      <Image width={128} height={128} className="h-32 w-auto" src={"/logo_eades.webp"} alt="EADES"/>
+      <Image width={192} height={192} className="h-44 w-auto" src={"/logo_eades.webp"} alt="EADES"/>
       <ul className="sm:flex justify-center items-center gap-5 hidden">
         <li>
           <Link className={`${pathname === "/inicio" ? "border-b-2 border-azul":""}`} href={"/inicio"}>INICIO</Link>
@@ -187,36 +166,15 @@ export default function NewNavBar() {
         <li>
           <Link className={`${pathname === "/blog" ? "border-b-2 border-azul":""}`} href={"/blog"}>BLOG</Link>
         </li>
-        <li className="flex justify-between items-center gap-2">
-          <a 
-            target="_blank" 
-            href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." 
+        <li>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..."
             aria-label="Whatsapp"
-            className="hover:text-celeste transition-all duration-500"
-          > 
-            <FontAwesomeIcon icon={faWhatsapp}/> 
-          </a>
-          <a
-            target="_blank" href="https://www.facebook.com/EADESPeru" aria-label="Facebook"
-            className="hover:text-celeste transition-all duration-500"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-full transition-all duration-300"
           >
-            <FontAwesomeIcon icon={faSquareFacebook} />
-          </a>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/eadespsicoterapia/"
-            aria-label="Instagram"
-            className="hover:text-celeste transition-all duration-500"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a
-            target="_blank"
-            href="https://www.youtube.com/@eadespsicoterapia"
-            aria-label="Youtube"
-            className="hover:text-celeste transition-all duration-500"
-          >
-            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faWhatsapp} className="text-lg"/>
+            <span>WhatsApp</span>
           </a>
         </li>
       </ul>

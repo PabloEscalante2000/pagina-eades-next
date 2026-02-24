@@ -30,7 +30,7 @@ export default function RootLayout({
       <body>
         {children}
         <Footer/>
-        <PromoPopup/>
+        {/* <PromoPopup/> */}
       </body>
     </html>
   );

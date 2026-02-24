@@ -174,6 +174,34 @@ function InicioPage() {
           </aside>
         </section>
       </section>
+      <section className="py-12 sm:py-20 sm:px-10 px-5 max-w-[1500px] mx-auto">
+        <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul mb-10">Lo que solemos trabajar en consulta</h2>
+        <div className="flex lg:flex-row flex-col gap-10 lg:gap-20 items-start">
+          <ul className="space-y-5 flex-1">
+            <li className="flex items-start gap-4">
+              <span className="mt-2 w-3 h-3 rounded-full bg-marroncito flex-none" />
+              <p className="font-open-sans text-lg text-black">Ansiedad, estados depresivos y crisis personales que comienzan a afectar la vida cotidiana.</p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="mt-2 w-3 h-3 rounded-full bg-marroncito flex-none" />
+              <p className="font-open-sans text-lg text-black">Conflictos vinculares que tienden a repetirse.</p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="mt-2 w-3 h-3 rounded-full bg-marroncito flex-none" />
+              <p className="font-open-sans text-lg text-black">Dificultades para regular emociones, sostener decisiones o construir una relación más estable con uno mismo.</p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="mt-2 w-3 h-3 rounded-full bg-marroncito flex-none" />
+              <p className="font-open-sans text-lg text-black">En algunos casos, realizamos evaluaciones psicológicas para precisar el funcionamiento emocional o cognitivo.</p>
+            </li>
+          </ul>
+          <div className="lg:w-[420px] w-full border-l-4 border-marroncito pl-6">
+            <p className="font-open-sans text-lg text-black italic">
+              Más allá del motivo de consulta, el trabajo terapéutico busca comprender cómo se ha configurado la experiencia actual y qué necesita transformarse.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="space-y-5 py-5 sm:py-10">
         <h2 className="text-azul text-4xl font-open-sans sm:px-10 px-5">Preguntas Frecuentes</h2>
         <section className="grid gap-10 lg:grid-cols-2 grid-cols-1 justify-center items-center md:justify-stretch md:items-stretch sm:p-16 p-10">

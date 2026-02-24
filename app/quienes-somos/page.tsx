@@ -37,6 +37,31 @@ function QuienesSomosPage() {
         <h2 className="px-5 font-poppins font-bold text-2xl text-center text-azul">Conoce nuestro equipo de Psicoterapeutas</h2>
         <CarruselProfSm/>
       </div>
+      <section className="py-16 sm:py-24 sm:px-16 px-6 max-w-[1200px] mx-auto">
+        <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul mb-8">Equipo Profesional</h2>
+        <div className="space-y-5">
+          <p className="font-open-sans text-lg text-azul">
+            El equipo de EADES está conformado por psicólogos clínicos formados en el enfoque del centro y supervisados de manera permanente por la dirección clínica.
+          </p>
+          <p className="font-open-sans text-lg text-azul">
+            Cada terapeuta trabaja desde una mirada integral, adaptando la intervención a la singularidad de cada persona.
+          </p>
+        </div>
+      </section>
+      <section className="py-16 sm:py-24 sm:px-16 px-6 max-w-[1200px] mx-auto">
+        <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul mb-10">Nuestro enfoque</h2>
+        <div className="space-y-6 border-l-4 border-azul pl-8">
+          <p className="font-open-sans text-lg text-azul">
+            En EADES abordamos ansiedad, depresión, conflictos vinculares y crisis personales desde una mirada integral.
+          </p>
+          <p className="font-open-sans text-lg text-azul">
+            No aplicamos recetas ni trabajamos una sola dimensión del problema. Analizamos cómo se articulan tus emociones, pensamientos y formas de actuar.
+          </p>
+          <p className="font-open-sans text-lg text-azul font-semibold">
+            Porque el cambio real no ocurre al aliviar un síntoma, sino al reorganizar la experiencia que lo produce.
+          </p>
+        </div>
+      </section>
       <section className={styles["sec-qs"]}>
         <h2 className="">Alianzas con nuestro Centro Psicoterapéutico</h2>
         <section>
