@@ -1,6 +1,42 @@
 [
   {
     "id": "bs-1",
+    "nombre": "Terapia Individual",
+    "descripcion": [
+      "Espacio de trabajo personal orientado a comprender y transformar la forma en que se organizan la ansiedad, el estado de ánimo, los conflictos internos y las decisiones que afectan tu vida cotidiana.",
+      "La intervención no se limita al alivio del síntoma, sino a la comprensión de los patrones que lo sostienen."
+    ],
+    "datos": [],
+    "datosEsp": [],
+    "datosConcl": [],
+    "img": "/adultos2.jpg"
+  },
+  {
+    "id": "bs-2",
+    "nombre": "Terapia de Pareja y Familiar",
+    "descripcion": [
+      "Acompañamiento para trabajar conflictos recurrentes, dificultades de comunicación y dinámicas vinculares que generan desgaste.",
+      "El objetivo es comprender cómo cada integrante vive e interpreta la relación, para reorganizar la forma en que se construye el vínculo."
+    ],
+    "datos": [],
+    "datosEsp": [],
+    "datosConcl": [],
+    "img": "/eades_consultorio_secundario.webp"
+  },
+  {
+    "id": "bs-3",
+    "nombre": "Evaluaciones Psicológicas",
+    "descripcion": [
+      "Procesos de evaluación orientados a comprender el funcionamiento emocional y cognitivo cuando es necesario precisar el diagnóstico o clarificar una situación específica.",
+      "Incluye evaluación de estado de ánimo, funcionamiento emocional, personalidad, atención, memoria y orientación vocacional."
+    ],
+    "datos": [],
+    "datosEsp": [],
+    "datosConcl": [],
+    "img": "/preguntas_frecuentes_v2.png"
+  },
+  {
+    "id": "bs-4",
     "nombre": "Niños",
     "descripcion": [
       "Buscamos desarrollar el bienestar emocional del infante abordando su entorno personal, familiar y escolar, a fin de reforzar su vínculo social.",
@@ -20,7 +56,7 @@
     "img": "/ninos2.jpg"
   },
   {
-    "id": "bs-2",
+    "id": "bs-5",
     "nombre": "Jóvenes",
     "descripcion": [
       "Acompañamos al adolescente y/o joven en su proceso de búsqueda de identidad, promoviendo el autoconocimiento y crecimiento personal.",
@@ -38,7 +74,7 @@
     "img": "/jovenes_v2.png"
   },
   {
-    "id": "bs-3",
+    "id": "bs-6",
     "nombre": "Adultos",
     "descripcion": [
       "Acompañamos al adulto a lidiar como etapas de su vida como crisis, conflictos personales. Tratamos dichos casos con profesionalismo debido a nuestro capacitado personal.",
@@ -56,7 +92,7 @@
     "img": "/adultos2.jpg"
   },
   {
-    "id": "bs-4",
+    "id": "bs-7",
     "nombre": "Adultos Mayores",
     "descripcion": [
       "Abordamos los cambios conductuales y psicosociales del adulto mayor, teniendo en cuenta las inseguridades y necesidades concretas.",
@@ -72,7 +108,7 @@
     "img": "/adulto_mayor_servicio_eades.webp"
   },
   {
-    "id": "bes-5",
+    "id": "bes-8",
     "nombre": "Formación Psicoterapéutica",
     "descripcion": [
       "El Programa académico de EADES tiene una duración de 4 años."
@@ -94,7 +130,7 @@
     "img": "/form_terapeutica.jpg"
   },
   {
-    "id": "bes-6",
+    "id": "bes-9",
     "nombre": "Talleres y eventos",
     "descripcion": [
       "Desarrollamos Escuela para Padres en diversas instituciones, a fin de orientarlos en la mejora de su vínculo familiar.",
