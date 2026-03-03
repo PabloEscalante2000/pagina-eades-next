@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /_next/
+
+Sitemap: https://grupoeades.org/sitemap.xml

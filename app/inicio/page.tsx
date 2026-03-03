@@ -3,6 +3,7 @@ import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons"
 import InicioButton from "@/components/InicioButton";
 import InicioPreguntas from "@/components/InicioPreguntas";
 import NewNavBarLoader from "@/components/NewNavBarLoader"
+import HeroCarrusel from "@/components/HeroCarrusel"
 import Image from "next/image"
 import diferencias from "@/public/data/diferencias.json"
 import serviciosPsicoterapeuticos from "@/public/data/serviciosPsicoterapeuticos.json"
@@ -16,14 +17,7 @@ function InicioPage() {
         <div className=" top-0 left-0 z-10 w-full">
           <NewNavBarLoader />
         </div>
-        <div className="w-full aspect-video relative max-h-[calc(100dvh-128px)]">
-          <video className="absolute w-full h-full inset-0 object-cover object-top " muted loop autoPlay>
-            <source src={"/video_last.webm"} type="video/mp4" />
-          </video>
-          <div className='absolute top-3 left-3 w-fit space-y-3 p-10 font-poppins text-azul bg-marroncito/50 backdrop-blur-sm lg:block hidden'>
-            <h1 className='sm:text-5xl text-3xl font-bold'>Nos adaptamos<br /> a tus necesidades</h1>
-          </div>
-        </div>
+        <HeroCarrusel />
       </div>
       <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>

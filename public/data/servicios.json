@@ -9,7 +9,7 @@
     "datos": [],
     "datosEsp": [],
     "datosConcl": [],
-    "img": "/adultos2.jpg"
+    "img": "/assets/terapia-individual.jpg"
   },
   {
     "id": "bs-2",
@@ -21,7 +21,7 @@
     "datos": [],
     "datosEsp": [],
     "datosConcl": [],
-    "img": "/eades_consultorio_secundario.webp"
+    "img": "/assets/terapia-de-pareja.jpg"
   },
   {
     "id": "bs-3",
@@ -33,7 +33,7 @@
     "datos": [],
     "datosEsp": [],
     "datosConcl": [],
-    "img": "/preguntas_frecuentes_v2.png"
+    "img": "/assets/evaluaciones-psicologicas.jpg"
   },
   {
     "id": "bs-4",

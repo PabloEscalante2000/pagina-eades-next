@@ -66,29 +66,9 @@ export default function NewNavBar() {
         <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
           <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/quienes-somos" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/quienes-somos"}>QUIÉNES SOMOS</Link>
         </li>
-        <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden">
-          <div className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative text-right w-full flex justify-between`}>
-            <button aria-label="desplegar" onClick={() => setListaDespegable((prev) => prev === 2 ? 0 : 2)} className="px-3 py-3 text-lg">
-            {listaDespegable === 2 ? (
-              <FontAwesomeIcon icon={faCaretUp} />
-            ):(
-              <FontAwesomeIcon icon={faCaretDown} />
-            )}
-            </button>
-            <Link href={"/servicios"} className={`px-2 py-3 w-full ${pathname === "/servicios" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} onClick={() => setVisible(false)}>SERVICIOS</Link>
-          </div>
+        <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
+          <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/servicios" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/servicios"}>SERVICIOS</Link>
         </li>
-        <div className={`transition-all ease-in-out duration-500 ${listaDespegable === 2 ? "h-[325px]":"h-0"} overflow-hidden `}>
-          {servLista.map((val,i) => (
-            <li key={i} className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden">
-            <button aria-label="nombre servicios" className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full bg-marroncito text-azul`} onClick={() => {
-              actualizarUbi(val.id)
-              router.push("/servicios")
-              setVisible(false)
-            }}>{val.nombre}</button>
-          </li>
-          ))}
-        </div>
         <button aria-label="desplegar nav" className={`flex w-full justify-between items-center border-b-2 border-azul relative overflow-hidden transition-all ease-in-out duration-500 ${listaDespegable === 1 ? "bg-azul text-marroncito":""}`} onClick={() => setListaDespegable((prev) => prev === 1 ? 0 : 1)}>
           <span className="block px-3 text-lg">
             {listaDespegable === 1 ? (
@@ -136,18 +116,8 @@ export default function NewNavBar() {
         <li>
           <Link className={`${pathname === "/quienes-somos" ? "border-b-2 border-azul":""}`} href={"/quienes-somos"}>QUIÉNES SOMOS</Link>
         </li>
-        <li className="relative group">
+        <li>
           <Link className={`${pathname === "/servicios" ? "border-b-2 border-azul":""}`} href={"/servicios"}>SERVICIOS</Link>
-          <ul className="absolute bg-marroncito p-0 space-y-3 transition-all duration-300 opacity-0 z-0 h-0 overflow-hidden group-hover:z-10 group-hover:opacity-100 group-hover:h-fit group-hover:p-3">
-            {servLista.map(service => (
-              <li key={service.id}>
-                <button aria-label={service.nombre.toLowerCase()} onClick={() => {
-                  actualizarUbi(service.id)
-                  router.push("/servicios")
-                }}>{service.nombre}</button>
-              </li>
-            ))}
-          </ul>
         </li>
         <li className="relative group">
           <Link className={`${pathname.startsWith("/test") ? "border-b-2 border-azul":""}`} href={"/test"}>TEST</Link>

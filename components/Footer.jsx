@@ -7,6 +7,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationDot, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
 
@@ -80,6 +81,11 @@ function Footer() {
           </p>
         </div>
       </section>
+      <div className="border-t border-azul/20 mt-5 pt-4 text-sm text-azul/60">
+        <Link href="/politica-privacidad" className="hover:text-azul transition-colors">
+          Política de Privacidad
+        </Link>
+      </div>
     </footer>
     <div className={` ${pop ? "fixed":"hidden"} top-0 left-0 w-full h-dvh bg-black/20 z-30`} onClick={() => setPop(!pop)}/>
     <section className={` ${pop ? "fixed scale-100":"hidden scale-95"} -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-full max-w-[800px] p-5 rounded-lg z-40 transition-all`}>
