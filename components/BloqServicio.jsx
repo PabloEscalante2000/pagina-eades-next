@@ -7,9 +7,9 @@ export default function BloqServicio({servicio, num}) {
             <Image width={960} height={960} alt={servicio.id} src={servicio.img} className="md:w-96 md:h-96 w-64 h-64 rounded-md object-cover object-center flex-none"/>
             <aside className="font-open-sans ">
                 <h2 className={` font-poppins  md:text-4xl text-2xl `}>{servicio.nombre}</h2>
-                <div>
+                <div className="text-center space-y-3 mt-3">
                     {servicio.descripcion.map((val,i) => (
-                        <p key={i}>
+                        <p key={i} className="text-lg">
                             {val}
                         </p>
                     ))}

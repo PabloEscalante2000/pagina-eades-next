@@ -1207,9 +1207,17 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 20px;
 }
 
-/* Paginación del carrusel de profesionales */
+/* Carrusel de profesionales */
 .team-swiper {
   padding-bottom: 48px !important;
+}
+
+.team-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.team-swiper .swiper-slide {
+  height: auto;
 }
 
 .team-swiper .swiper-pagination {

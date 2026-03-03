@@ -12,30 +12,32 @@ import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons
 import Image from 'next/image';
 
 export default function CarruselProfLg() {
-  const swiperRef                 = useRef<SwiperType | null>(null);
-  const [isStart, setIsStart]     = useState(true);
-  const [isEnd,   setIsEnd]       = useState(false);
+  const swiperRef             = useRef<SwiperType | null>(null);
+  const [isStart, setIsStart] = useState(true);
+  const [isEnd,   setIsEnd]   = useState(false);
 
   return (
-    <div className="w-full">
-      <div className="flex justify-end gap-3 mb-6">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          disabled={isStart}
-          className={`w-11 h-11 rounded-full border-2 border-azul flex items-center justify-center text-azul transition-all duration-300 hover:bg-azul hover:text-marroncito disabled:opacity-30 disabled:cursor-not-allowed`}
-          aria-label="Anterior"
-        >
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          disabled={isEnd}
-          className={`w-11 h-11 rounded-full border-2 border-azul flex items-center justify-center text-azul transition-all duration-300 hover:bg-azul hover:text-marroncito disabled:opacity-30 disabled:cursor-not-allowed`}
-          aria-label="Siguiente"
-        >
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
-      </div>
+    <div className="relative w-full px-12">
+
+      {/* Flecha izquierda */}
+      <button
+        onClick={() => swiperRef.current?.slidePrev()}
+        disabled={isStart}
+        className="absolute left-0 top-[45%] -translate-y-1/2 z-10 w-11 h-11 rounded-full border-2 border-azul bg-celeste flex items-center justify-center text-azul transition-all duration-300 hover:bg-azul hover:text-marroncito disabled:opacity-30 disabled:cursor-not-allowed"
+        aria-label="Anterior"
+      >
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </button>
+
+      {/* Flecha derecha */}
+      <button
+        onClick={() => swiperRef.current?.slideNext()}
+        disabled={isEnd}
+        className="absolute right-0 top-[45%] -translate-y-1/2 z-10 w-11 h-11 rounded-full border-2 border-azul bg-celeste flex items-center justify-center text-azul transition-all duration-300 hover:bg-azul hover:text-marroncito disabled:opacity-30 disabled:cursor-not-allowed"
+        aria-label="Siguiente"
+      >
+        <FontAwesomeIcon icon={faChevronRight} />
+      </button>
 
       <Swiper
         modules={[Pagination]}
@@ -58,17 +60,17 @@ export default function CarruselProfLg() {
         className="team-swiper"
       >
         {dataProfesional.map((val, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white rounded-2xl overflow-hidden border border-azul/10 shadow-sm">
+          <SwiperSlide key={index} className="h-auto">
+            <div className="bg-white rounded-2xl overflow-hidden border border-azul/10 shadow-sm h-full flex flex-col">
               <Image
                 src={val.img_url}
                 alt={val.nombre}
                 width={400}
                 height={400}
-                className="w-full h-64 object-cover"
+                className="w-full h-96 object-cover flex-none"
                 style={{ objectPosition: val.obj_pos ?? "center top" }}
               />
-              <div className="p-5 space-y-3">
+              <div className="p-5 space-y-3 flex flex-col flex-1">
                 <div>
                   <h3 className="font-poppins font-bold text-azul text-lg leading-tight">{val.nombre}</h3>
                   {val.cpp && (

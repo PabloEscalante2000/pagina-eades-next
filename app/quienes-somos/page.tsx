@@ -46,7 +46,7 @@ function QuienesSomosPage() {
         <div className="max-w-[1200px] mx-auto">
           <div className="mb-10">
             <p className="font-poppins text-sm font-semibold text-azul/60 uppercase tracking-widest mb-2">Nuestro equipo</p>
-            <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul">Conoce a nuestros psicoterapeutas</h2>
+            <h2 className="font-poppins font-bold sm:text-6xl text-4xl text-azul">Conoce a nuestros especialistas</h2>
           </div>
           <CarruselProfLg />
         </div>
