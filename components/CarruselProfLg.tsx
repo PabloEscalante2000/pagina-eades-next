@@ -1,60 +1,93 @@
 "use client"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
-import psicologos from "@/public/data/psicologos.json"
-import { useState } from "react"
-import Image from "next/image"
+import dataProfesional from '../public/data/psicologos.json';
+import "swiper/css"
+import "swiper/css/pagination"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import { useRef, useState } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
-function CarruselProfSm() {
-
-  const [psi, setPsi] = useState(0)
-
-  //State derivado
-  const psicologo = psicologos[psi]
-
-  const nextPsi = () => {
-    if (psi < psicologos.length - 1) {
-      setPsi(prevPsi => prevPsi + 1)
-    }
-  }
-
-  const backPsi = () => {
-    if (psi > 0) {
-      setPsi(prevPsi => prevPsi - 1)
-    }
-  }
+export default function CarruselProfLg() {
+  const swiperRef                 = useRef<SwiperType | null>(null);
+  const [isStart, setIsStart]     = useState(true);
+  const [isEnd,   setIsEnd]       = useState(false);
 
   return (
-    <div className="sm:block hidden">
-      <section className={`bg-marroncito p-10`}>
-        <h2 className="font-poppins mb-5! text-4xl! text-azul!">Conoce nuestro equipo de Psicoterapeutas</h2>
-        <section className={"flex justify-center items-center gap-5"}>
-          <span onClick={backPsi} className={`text-azul text-[32px] pb-5 ${psi <= 0 ? "text-gray-500 cursor-default" : ""} `}><FontAwesomeIcon icon={faArrowLeft} /></span>
-          <section className={"psi-data"}>
-            <Image width={300} height={300} src={psicologo.img_url} alt={psicologo.nombre} className={`${psi === 5 ? "object-[110%_30%]!": psi === 0 ? "object-[100%_60%]!":""}`} />
-            <aside>
-              <h3>{psicologo.nombre}</h3>
-              <em>{psicologo?.cpp}</em>
-              <ul>
-                {psicologo.datos.map((e, index: number) => {
-                  return (<li key={index}>{e}</li>)
-                })}
-              </ul>
-              <a href="https://api.whatsapp.com/send?phone=51930509438&text=Buenas%2C%20estoy%20interesad%40%20en%20sus%20servicios%2C%20mi%20nombre%20es..." target="_blank" className="border-2 border-azul px-3 py-1 bg-azul text-marroncito transition-all ease-in-out font-poppins hover:bg-marroncito hover:text-azul duration-500">Agenda tu cita</a>
-            </aside>
-          </section>
-          <span onClick={nextPsi} className={`text-azul text-[32px] pb-5 ${psi >= psicologos.length - 1 ? "text-gray-500 cursor-default" : ""} `}><FontAwesomeIcon icon={faArrowRight} /></span>
-        </section>
-        <aside className={"clave-psi"}>
-          {psicologos.map((e, index: number) => {
-            return (
-              <div key={index} onClick={() => setPsi(index)} className={psi === index ? "active-cl" : "def-cl"}></div>)
-          })}
-        </aside>
-      </section>
-    </div>
-  )
-}
+    <div className="w-full">
+      <div className="flex justify-end gap-3 mb-6">
+        <button
+          onClick={() => swiperRef.current?.slidePrev()}
+          disabled={isStart}
+          className={`w-11 h-11 rounded-full border-2 border-azul flex items-center justify-center text-azul transition-all duration-300 hover:bg-azul hover:text-marroncito disabled:opacity-30 disabled:cursor-not-allowed`}
+          aria-label="Anterior"
+        >
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        <button
+          onClick={() => swiperRef.current?.slideNext()}
+          disabled={isEnd}
+          className={`w-11 h-11 rounded-full border-2 border-azul flex items-center justify-center text-azul transition-all duration-300 hover:bg-azul hover:text-marroncito disabled:opacity-30 disabled:cursor-not-allowed`}
+          aria-label="Siguiente"
+        >
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      </div>
 
-export default CarruselProfSm;
+      <Swiper
+        modules={[Pagination]}
+        onSwiper={(swiper) => { swiperRef.current = swiper; }}
+        spaceBetween={24}
+        slidesPerView={1}
+        breakpoints={{
+          640:  { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        pagination={{ clickable: true }}
+        onSlideChange={(swiper) => {
+          setIsStart(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
+        onInit={(swiper) => {
+          setIsStart(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
+        className="team-swiper"
+      >
+        {dataProfesional.map((val, index) => (
+          <SwiperSlide key={index}>
+            <div className="bg-white rounded-2xl overflow-hidden border border-azul/10 shadow-sm">
+              <Image
+                src={val.img_url}
+                alt={val.nombre}
+                width={400}
+                height={400}
+                className="w-full h-64 object-cover"
+                style={{ objectPosition: val.obj_pos ?? "center top" }}
+              />
+              <div className="p-5 space-y-3">
+                <div>
+                  <h3 className="font-poppins font-bold text-azul text-lg leading-tight">{val.nombre}</h3>
+                  {val.cpp && (
+                    <p className="font-open-sans text-xs text-azul/50 mt-0.5">{val.cpp}</p>
+                  )}
+                </div>
+                <ul className="space-y-1.5">
+                  {val.datos.map((e, i) => (
+                    <li key={i} className="flex items-start gap-2 font-open-sans text-sm text-azul/80 leading-snug">
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-azul flex-none shrink-0" />
+                      {e}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}

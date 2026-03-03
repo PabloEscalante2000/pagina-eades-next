@@ -22,7 +22,7 @@ function InicioPage() {
       <section className="space-y-5">
         <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul font-bold">SERVICIOS PSICOTERAPÉUTICOS</h2>
         <section className="flex justify-center md:flex-row flex-col py-20 lg:px-10 px-5 bg-celeste">
-          <div className="w-full 2xl:space-y-0 lg:gap-16 gap-10 grid lg:grid-cols-4 md:grid-cols-2 md:mx-auto">
+          <div className="w-full 2xl:space-y-0 lg:gap-16 gap-10 grid lg:grid-cols-3 md:grid-cols-2 md:mx-auto">
             {serviciosPsicoterapeuticos.map((val, i) => (
               <aside key={i} className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8 col-span-1">
                 <Image alt="servicios psicoterapeuticos" src={val.img} width={400} height={400} className="w-full object-cover object-center aspect-square " />
@@ -100,7 +100,7 @@ function InicioPage() {
             <Image src="/assets/logo_itas.png" width={200} height={80} alt="ITAS" />
           </div>
           <Link className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5" href={"https://pseres.pe/"} rel="noopener noreferrer" target="_blank">
-            <Image src="/pseres.png" className="cursor-pointer" width={200} height={80} alt="pseres" rel="noopener noreferrer"  />
+            <Image src="/pseres.png" className="cursor-pointer" width={200} height={80} alt="pseres" rel="noopener noreferrer" />
           </Link>
           {/* <div className="max-w-[300px] text-center font-poppins-light flex flex-col justify-center items-center gap-5">
             <Image src="/yachay.png" width={200} height={80} alt="Yachay" />
@@ -143,31 +143,8 @@ function InicioPage() {
           </div>
         </div>
       </section>
-      <section className="space-y-5">
-        <h2 className="font-poppins sm:px-10 px-5 sm:text-4xl text-3xl py-10 text-azul uppercase font-bold">Servicios especializados en educación</h2>
-        <section className="flex md:justify-center md:items-start justify-stretch items-stretch md:flex-row flex-col md:gap-10 gap-14 bg-azul py-10">
-          <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8">
-            <Image alt="des" src="/form_terapeutica.jpg" width={384} height={384} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square" />
-            <div className="flex justify-between items-center text-4xl font-poppins text-white sm:px-0 px-3">
-              <h3>Formación<br /> Psicoterapéutica</h3>
-              <InicioButton
-                child={<FontAwesomeIcon icon={faArrowAltCircleRight} />}
-                clas={"transition-all duration-500 hover:text-celeste"}
-              />
-            </div>
-          </aside>
-          <aside className="transition-all duration-500 ease-in-out hover:-translate-y-6 space-y-8 md:mt-20 lg:mt-0">
-            <Image alt="des" src="/taller_evento.jpg" width={384} height={384} className="md:w-96 md:h-96 w-full h-64 object-cover object-center aspect-square" />
-            <div className="flex justify-between items-center text-4xl font-poppins text-white sm:px-0 px-3">
-              <h3>Talleres <br /> y eventos</h3>
-              <InicioButton
-                child={<FontAwesomeIcon icon={faArrowAltCircleRight} />}
-                clas={"transition-all duration-500 hover:text-celeste"}
-              />
-            </div>
-          </aside>
-        </section>
-      </section>
+
+
       <section className="py-12 sm:py-20 sm:px-10 px-5 max-w-[1500px] mx-auto">
         <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul mb-10">Lo que solemos trabajar en consulta</h2>
         <div className="flex lg:flex-row flex-col gap-10 lg:gap-20 items-start">

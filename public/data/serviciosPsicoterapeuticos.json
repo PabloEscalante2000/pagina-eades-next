@@ -1,22 +1,17 @@
 [
     {
-      "nombre":"Niños",
-      "img":"/ninos2.jpg",
+      "nombre":"Terapia<br/>Individual",
+      "img":"/assets/terapia-individual.jpg",
       "ubi":"bs-1"
     },
     {
-      "nombre":"Jóvenes",
-      "img":"/jovenes_v2.png",
-      "ubi":"bs-1"
+      "nombre":"Terapia de Pareja<br/>y Familiar",
+      "img":"/assets/terapia-de-pareja.jpg",
+      "ubi":"bs-2"
     },
     {
-      "nombre":"Adultos",
-      "img":"/adultos2.jpg",
-      "ubi":"bs-1"
-    },
-    {
-      "nombre":"Adultos<br/>Mayores",
-      "img":"/adulto_mayor_servicio_eades.webp",
-      "ubi":"bs-1"
+      "nombre":"Evaluaciones<br/>Psicológicas",
+      "img":"/assets/evaluaciones-psicologicas.jpg",
+      "ubi":"bs-3"
     }
 ]

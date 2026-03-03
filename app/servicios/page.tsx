@@ -20,12 +20,8 @@ function ServiciosPage() {
         <h1 className="sm:text-5xl text-3xl font-poppins text-azul sm:p-10 p-5 bg-marroncito/80 sm:m-10 m-5 max-w-[600px] font-bold">Conoce nuestros serivicios psicoterapéuticos</h1>
       </main>
       <section className="my-10 flex flex-col justify-stretch items-stretch gap-5 m-auto">
-        {servicios.slice(0,7).map((serv,i) => (
+        {servicios.slice(0,3).map((serv,i) => (
           <BloqServicio key={i} servicio={serv} num={i % 2 === 0 ? 1:2}/>
-        ))}
-        <h2 className="text-azul font-poppins sm:text-4xl text-xl mt-5">Conoce nuestros servicios enfocados en la formación</h2>
-        {servicios.slice(7,9).map((serv,i) => (
-          <BloqServicio key={i} servicio={serv} num={i % 2 === 0 ? 1:3}/>
         ))}
       </section>
       <section className="bg-marroncito">

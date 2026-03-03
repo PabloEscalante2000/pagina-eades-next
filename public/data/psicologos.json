@@ -2,6 +2,7 @@
   {
     "nombre": "César Escalante",
     "img_url": "/cesar_new-min.webp",
+    "obj_pos": "center 35%",
     "cpp": "CPsP: 29611",
     "datos": [
       "Psicólogo clínico con Maestría en Neuropsicología",
@@ -12,37 +13,41 @@
   },
   {
     "nombre": "Kevin Cubas",
+    "img_url": "/kevin_cubas.jpg",
+    "obj_pos": "center 15%",
     "cpp": "CPsP:66725",
     "datos": [
       "Psicólogo Clínico.",
       "Bases en la terapia cognitivo conductual.",
       "Cursos de especialización en técnicas de entrevista, diagnóstico, intervención y tratamiento en psicología de adultos, así como en niños y adolescentes con TEA"
-    ],
-    "img_url": "/kevin_cubas.jpg"
+    ]
   },
   {
-    "nombre":"Catherin Cermeño Durand",
-    "cpp":"CPsP:35863",
-    "datos":[
+    "nombre": "Catherin Cermeño Durand",
+    "img_url": "/catherin_eades.jpg",
+    "obj_pos": "center 15%",
+    "cpp": "CPsP:35863",
+    "datos": [
       "Psicóloga clínica y psicoterapeuta psicoanalítica",
       "Participación en proyectos de salud mental e intervención en contextos comunitarios con poblaciones vulnerables."
-    ],
-    "img_url":"/catherin_eades.jpg"
+    ]
   },
   {
     "nombre": "Melissa Alejandra Huaman Sánchez",
+    "img_url": "/melissa_new.webp",
+    "obj_pos": "center 15%",
     "datos": [
       "Facilitadora Psicoterapéutica Psicoanalítica.",
       "Docente en teoría psicoanalítica en Grupo EADES."
-    ],
-    "img_url": "/melissa_new.webp"
+    ]
   },
   {
-    "nombre":"Valeria Arbulú",
-    "datos":[
+    "nombre": "Valeria Arbulú",
+    "img_url": "/valeria.jpg",
+    "obj_pos": "center 15%",
+    "datos": [
       "Facilitadora Psicoterapéutica Psicoanalítica.",
       "Docente de teoría psicoanalítica en Grupo EADES."
-    ],
-    "img_url":"/valeria.jpg"
+    ]
   }
 ]
