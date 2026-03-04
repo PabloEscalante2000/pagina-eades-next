@@ -12,26 +12,27 @@ function ServiciosPage() {
 
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
-    
-      <main className=" relative pri-serv h-dvh w-screen flex justify-end flex-col bg-cover bg-center"  id="bs">
+
+      <main className=" relative pri-serv h-dvh w-screen flex justify-end flex-col bg-cover bg-center" id="bs">
         <div className="absolute top-0 left-0 z-10 w-full">
-        <NewNavBar/>
+          <NewNavBar />
         </div>
         <h1 className="sm:text-5xl text-3xl font-poppins text-azul sm:p-10 p-5 bg-marroncito/80 sm:m-10 m-5 max-w-[600px] font-bold">Conoce nuestros serivicios psicoterapéuticos</h1>
       </main>
       <section className="my-10 flex flex-col justify-stretch items-stretch gap-5 m-auto">
-        {servicios.slice(0,3).map((serv,i) => (
-          <BloqServicio key={i} servicio={serv} num={i % 2 === 0 ? 1:2}/>
+        {servicios.slice(0, 3).map((serv, i) => (
+          <BloqServicio link={""} key={i} servicio={serv} num={i % 2 === 0 ? 1 : 2} />
         ))}
+        <BloqServicio servicio={servicios[3]} num={3} link="https://pseres.pe/" />
       </section>
       <section className="bg-marroncito">
         <div className="max-w-[1200px] mx-auto sm:px-10 px-5 sm:py-16 py-10 flex md:flex-row flex-col gap-10 items-start">
           <Image
-            src="/CesarEscalante.webp"
+            src="/cesar_new-min.webp"
             alt="César Escalante Sifuentes"
             width={320}
             height={320}
-            className="w-72 h-72 object-cover object-top rounded-lg flex-none"
+            className="w-72 h-72 object-cover rounded-lg flex-none"
           />
           <div className="space-y-4">
             <div>

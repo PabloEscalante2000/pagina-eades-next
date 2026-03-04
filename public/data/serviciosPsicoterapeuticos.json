@@ -2,16 +2,29 @@
     {
       "nombre":"Terapia<br/>Individual",
       "img":"/assets/terapia-individual.jpg",
-      "ubi":"bs-1"
+      "ubi":"bs-1",
+      "isPseres": false,
+      "link": null
     },
     {
       "nombre":"Terapia de Pareja<br/>y Familiar",
       "img":"/assets/terapia-de-pareja.jpg",
-      "ubi":"bs-2"
+      "ubi":"bs-2",
+      "isPseres": false,
+      "link": null
     },
     {
       "nombre":"Evaluaciones<br/>Psicológicas",
       "img":"/assets/evaluaciones-psicologicas.jpg",
-      "ubi":"bs-3"
+      "ubi":"bs-3",
+      "isPseres": false,
+      "link": null
+    },
+    {
+      "nombre":"Terapia para<br/>Niños",
+      "img":"/ninos2.jpg",
+      "ubi":"bs-4",
+      "isPseres": true,
+      "link": "https://pseres.pe/"
     }
 ]
