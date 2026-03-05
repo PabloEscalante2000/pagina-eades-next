@@ -31,22 +31,19 @@ function QuienesSomosPage() {
           </div>
         </div>
       </section>
-      <section className="py-16 sm:py-24 sm:px-16 px-6 max-w-[1200px] mx-auto">
-        <h2 className="font-poppins font-bold sm:text-4xl text-3xl text-azul mb-8">Equipo Profesional</h2>
-        <div className="space-y-5">
-          <p className="font-open-sans text-lg text-azul">
-            El equipo de EADES está conformado por psicólogos clínicos formados en el enfoque del centro y supervisados de manera permanente por la dirección clínica.
-          </p>
-          <p className="font-open-sans text-lg text-azul">
-            Cada terapeuta trabaja desde una mirada integral, adaptando la intervención a la singularidad de cada persona.
-          </p>
-        </div>
-      </section>
       <section className="py-16 sm:py-24 sm:px-16 px-6 bg-celeste">
         <div className="max-w-[1200px] mx-auto">
           <div className="mb-10">
             <p className="font-poppins text-sm font-semibold text-azul/60 uppercase tracking-widest mb-2">Nuestro equipo</p>
             <h2 className="font-poppins font-bold sm:text-6xl text-4xl text-azul">Conoce a nuestros especialistas</h2>
+            <div className="mt-6 space-y-3 max-w-2xl">
+              <p className="font-open-sans text-lg text-azul">
+                El equipo de EADES está conformado por psicólogos clínicos formados en el enfoque del centro y supervisados de manera permanente por la dirección clínica.
+              </p>
+              <p className="font-open-sans text-lg text-azul">
+                Cada terapeuta trabaja desde una mirada integral, adaptando la intervención a la singularidad de cada persona.
+              </p>
+            </div>
           </div>
           <CarruselProfLg />
         </div>
@@ -65,17 +62,6 @@ function QuienesSomosPage() {
           </p>
         </div>
       </section>
-      <section className={styles["sec-qs"]}>
-        <h2 className="">Alianzas con nuestro Centro Psicoterapéutico</h2>
-        <section>
-          <Image width={100} height={100} src={"/educare.webp"} alt="Educare convenio EADES" />
-          <Image width={100} height={100} src={"/esc_convenio_eades.webp"} alt="ESC Escucha Soluciona Crece convenio EADES" />
-          <Image width={100} height={100} src={"/ilumina_convenio_eades.webp"} alt="Ilumina convenio EADES" />
-        </section>
-      </section>
-
-
-
     </div>
   )
 }

@@ -52,9 +52,9 @@ export default function InicioPreguntas() {
     }
 
     return (
-        <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-start w-fit lg:mx-0 mx-auto">
+        <div className="grid gap-10 content-center 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-2 justify-center items-stretch w-fit lg:mx-0 mx-auto">
             {preguntasFrecuentes.map((val,i) => (
-            <aside key={i} className="bg-marroncito p-5 shadow-xl flex justify-around items-center flex-col w-full rounded-2xl text-azul gap-5">
+            <aside key={i} className="bg-marroncito p-5 shadow-xl flex justify-between items-center flex-col h-full w-full rounded-2xl text-azul gap-5">
                 <p className="text-center font-poppins flex-1 py-2">
                 <FontAwesomeIcon icon={val.icon} className="text-xl"/><br/>{val.preg}
                 </p>

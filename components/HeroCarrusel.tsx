@@ -8,12 +8,16 @@ import Link from "next/link"
 
 const slides = [
   {
-    bg: "/assets/bg-2.jpg",
+    bg: "/assets/IMG_4924.jpg",
     text: "Psicoterapia para comprender lo que sientes y transformar tu experiencia.",
   },
   {
     bg: "/assets/bg-3.jpg",
     text: "Trabajamos la forma en que se organizan tus emociones, pensamientos y decisiones.",
+  },
+  {
+    bg: "/assets/bg-tercero.jpg",
+    text: "Psicoterapia enfocada a tratar problemas de pareja.",
   },
 ]
 
