@@ -134,11 +134,11 @@ function InicioPage() {
         </div>
       </section>
       <div className="py-12 flex flex-col gap-10 xl:w-[1200px] w-full justify-center items-center mx-auto font-poppins">
-        <h1 className="text-marron-oscuro text-center p-5 text-4xl font-poppins text-azul">Nuestras marcas aliadas</h1>
+        <h1 className="text-marron-oscuro text-center p-5 text-4xl md:text-5xl font-bold  font-poppins text-azul">Nuestras marcas aliadas</h1>
         <div className="flex pt-10 flex-wrap gap-10 justify-center items-end">
           <div className="flex flex-col items-center gap-5">
             <div className="h-24 flex items-center justify-center">
-              <Image src="/ilumina_logo.png" width={200} height={80} alt="Ilumina" className="h-auto max-h-20 w-auto" />
+              <Image src="/ilumina_logo.png" width={200} height={80} alt="Ilumina" className="h-auto max-h-32 w-auto" />
             </div>
             <Link href="https://asociacionilumina.org/" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-azul text-white font-poppins font-bold text-sm rounded transition-all duration-300 hover:bg-celeste">
               Visitar web
@@ -146,7 +146,7 @@ function InicioPage() {
           </div>
           <div className="flex flex-col items-center gap-5">
             <div className="h-24 flex items-center justify-center">
-              <Image src="/assets/logo_itas.png" width={200} height={80} alt="ITAS" className="h-auto max-h-20 w-auto" />
+              <Image src="/assets/logo_itas.png" width={200} height={80} alt="ITAS" className="h-auto max-h-32 w-auto" />
             </div>
             <Link href="https://institutoitas.com/" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-azul text-white font-poppins font-bold text-sm rounded transition-all duration-300 hover:bg-celeste">
               Visitar web
@@ -154,7 +154,7 @@ function InicioPage() {
           </div>
           <div className="flex flex-col items-center gap-5">
             <div className="h-24 flex items-center justify-center">
-              <Image src="/pseres.png" width={200} height={80} alt="Pseres" className="h-auto max-h-20 w-auto" />
+              <Image src="/pseres.png" width={200} height={80} alt="Pseres" className="h-auto max-h-32 w-auto" />
             </div>
             <Link href="https://pseres.pe/" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-azul text-white font-poppins font-bold text-sm rounded transition-all duration-300 hover:bg-celeste">
               Visitar web
