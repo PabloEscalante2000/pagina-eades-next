@@ -33,17 +33,6 @@
     ]
   },
   {
-    "nombre": "Silvana Corvetto",
-    "img_url": "/silvana_pseres.png",
-    "cpp": "",
-    "obj_pos": "center 15%",
-    "datos": [
-      "Psicoterapeuta Gestalt y Especialista en Estimulación Temprana, con experiencia brindando acompañamiento emocional a niños, adolescentes y adultos",
-      "Promoviendo el autoconocimiento, bienestar y crecimiento personal.",
-      "Licenciada en psicología y psicoterapeuta Gestalt"
-    ]
-  },
-  {
     "nombre": "Melissa Alejandra Huaman Sánchez",
     "img_url": "/melissa_new.webp",
     "obj_pos": "center 15%",
