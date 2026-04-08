@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "mcp__ide__getDiagnostics",
-      "WebFetch(domain:pseres.pe)"
+      "WebFetch(domain:pseres.pe)",
+      "Bash(pip install:*)",
+      "Bash(python3 -c ':*)",
+      "Bash(python -m pip install python-docx -q)",
+      "Bash(python -c ':*)",
+      "Read(//tmp/**)",
+      "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v1\")",
+      "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v2\")"
     ]
   }
 }
