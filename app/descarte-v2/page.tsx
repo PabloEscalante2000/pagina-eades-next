@@ -22,10 +22,10 @@ export default function DescarteV2Page() {
 
       {/* HERO */}
       <section
-        className="relative min-h-screen flex flex-col justify-center items-start bg-cover px-6 sm:px-16 py-32"
+        className="relative h-screen flex flex-col justify-center items-start bg-cover px-6 sm:px-16"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(65,88,142,0.75), rgba(176,196,223,0.55)), url(/assets/fondo_descarte.webp)",
+            "linear-gradient(to right, rgba(65,88,142,0.92), rgba(65,88,142,0.15)), url(/assets/fondo_descarte.webp)",
           backgroundPosition: "right center",
         }}
       >

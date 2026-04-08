@@ -26,7 +26,7 @@ export default function DescarteV1Page() {
         className="relative min-h-screen flex flex-col justify-center items-start bg-cover px-6 sm:px-16 py-32"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom right, rgba(65,88,142,0.80), rgba(176,196,223,0.60)), url(/assets/fondo_descarte.webp)",
+            "linear-gradient(to right, rgba(65,88,142,0.92), rgba(65,88,142,0.15)), url(/assets/fondo_descarte.webp)",
           backgroundPosition: "right center",
         }}
       >
