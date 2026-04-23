@@ -16,7 +16,7 @@ export default function DescarteV1Page() {
 
       {/* LINK INICIO */}
       <div className="absolute top-0 left-0 z-20 px-6 py-5">
-        <Link href="/inicio" className="font-poppins text-sm text-white/80 hover:text-white transition-colors duration-200 flex items-center gap-2">
+        <Link href="/inicio" className="font-poppins text-base text-white/80 hover:text-white transition-colors duration-200 flex items-center gap-2">
           ← Volver al inicio
         </Link>
       </div>
@@ -31,13 +31,13 @@ export default function DescarteV1Page() {
         }}
       >
         <div className="max-w-2xl space-y-6">
-          <p className="font-poppins text-sm font-semibold text-white/70 uppercase tracking-widest">
+          <p className="font-poppins text-base font-semibold text-white/70 uppercase tracking-widest">
             Servicio clínico · EADES
           </p>
           <h1 className="font-poppins font-bold text-4xl sm:text-6xl text-white leading-tight">
             Cuando algo no se siente bien, ponerle nombre importa
           </h1>
-          <p className="font-open-sans text-lg text-white/90 leading-relaxed max-w-xl">
+          <p className="font-open-sans text-xl text-white/90 leading-relaxed max-w-xl">
             No todo malestar emocional significa lo mismo. El descarte de
             depresión y ansiedad es una evaluación clínica orientada a
             comprender mejor lo que está ocurriendo, con criterio profesional
@@ -48,7 +48,7 @@ export default function DescarteV1Page() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-3 bg-white text-azul font-poppins font-bold rounded transition-all duration-300 hover:bg-celeste"
+              className="px-7 py-3 bg-white text-azul font-poppins font-bold text-lg rounded transition-all duration-300 hover:bg-celeste"
             >
               Solicitar evaluación
             </a>
@@ -63,7 +63,7 @@ export default function DescarteV1Page() {
             <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
               ¿En qué consiste?
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               Es un espacio de evaluación clínica en el que se exploran síntomas,
               antecedentes, contexto emocional y funcionamiento actual, con apoyo
               de instrumentos psicológicos validados cuando corresponde.
@@ -97,13 +97,13 @@ export default function DescarteV1Page() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-xl p-5 border-l-4 border-azul space-y-1 shadow-sm"
+                  className="bg-white rounded-xl p-5 border-l-4 border-azul space-y-2 shadow-sm"
                 >
-                  <span className="text-2xl">{item.icon}</span>
-                  <h3 className="font-poppins font-bold text-azul text-base">
+                  <span className="text-3xl">{item.icon}</span>
+                  <h3 className="font-poppins font-bold text-azul text-lg">
                     {item.titulo}
                   </h3>
-                  <p className="font-open-sans text-azul/80 text-sm leading-relaxed">
+                  <p className="font-open-sans text-azul/80 text-base leading-relaxed">
                     {item.texto}
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export default function DescarteV1Page() {
             <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
               ¿Para quién puede ser útil?
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               Para personas que vienen sintiendo, de manera persistente, que algo
               no está bien y necesitan comprender mejor lo que les pasa. No es
               necesario &ldquo;estar muy mal&rdquo; para consultar.
@@ -144,14 +144,14 @@ export default function DescarteV1Page() {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 font-open-sans text-azul text-base"
+                  className="flex items-start gap-3 font-open-sans text-azul text-lg"
                 >
-                  <span className="mt-1 w-2 h-2 rounded-full bg-azul flex-none" />
+                  <span className="mt-1.5 w-2.5 h-2.5 rounded-full bg-azul flex-none" />
                   {item}
                 </li>
               ))}
             </ul>
-            <p className="font-open-sans text-azul/70 text-base italic border-l-4 border-azul pl-4">
+            <p className="font-open-sans text-azul/70 text-lg italic border-l-4 border-azul pl-4">
               A veces, pedir una evaluación a tiempo permite ordenar lo que se
               está viviendo antes de que el malestar se profundice.
             </p>
@@ -175,14 +175,14 @@ export default function DescarteV1Page() {
             <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
               Nuestro enfoque
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               En EADES, la salud mental se aborda desde una mirada clínica que
               combina profundidad, criterio y cercanía humana. Nuestro equipo
               tiene amplia experiencia trabajando casos de ansiedad, depresión,
               crisis existenciales y procesos complejos, con énfasis en una
               comprensión más profunda de la experiencia de la persona.
             </p>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               Por eso, este descarte no se plantea como una &ldquo;solución
               rápida&rdquo;, sino como una evaluación estructurada que ayude a
               tomar decisiones con mayor claridad.
@@ -196,7 +196,7 @@ export default function DescarteV1Page() {
               height={500}
               className="w-full h-96 object-cover object-[center_35%] rounded-2xl shadow-lg"
             />
-            <p className="font-poppins text-sm text-azul/60 mt-3 text-center">
+            <p className="font-poppins text-base text-azul/60 mt-3 text-center">
               César Escalante — Director de EADES · Más de 25 años de experiencia
             </p>
           </div>
@@ -234,13 +234,13 @@ export default function DescarteV1Page() {
                   key={i}
                   className="bg-white/10 rounded-xl p-6 space-y-3 border border-white/20"
                 >
-                  <span className="font-poppins font-bold text-4xl text-white/30">
+                  <span className="font-poppins font-bold text-5xl text-white/30">
                     {item.num}
                   </span>
-                  <h3 className="font-poppins font-bold text-xl text-white">
+                  <h3 className="font-poppins font-bold text-2xl text-white">
                     {item.titulo}
                   </h3>
-                  <p className="font-open-sans text-white/80 text-base leading-relaxed">
+                  <p className="font-open-sans text-white/80 text-lg leading-relaxed">
                     {item.texto}
                   </p>
                 </div>
@@ -300,10 +300,10 @@ export default function DescarteV1Page() {
                   key={i}
                   className="bg-white rounded-xl p-6 space-y-2 shadow-sm"
                 >
-                  <h3 className="font-poppins font-bold text-azul text-lg">
+                  <h3 className="font-poppins font-bold text-azul text-xl">
                     {item.pregunta}
                   </h3>
-                  <p className="font-open-sans text-azul/80 text-base leading-relaxed">
+                  <p className="font-open-sans text-azul/80 text-lg leading-relaxed">
                     {item.respuesta}
                   </p>
                 </div>
@@ -328,7 +328,7 @@ export default function DescarteV1Page() {
           <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
             Solicite una evaluación clínica de descarte
           </h2>
-          <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+          <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
             Un primer espacio para comprender mejor lo que le está pasando y
             orientar los siguientes pasos con criterio profesional.
           </p>
@@ -336,7 +336,7 @@ export default function DescarteV1Page() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-azul text-white font-poppins font-bold text-lg rounded-lg transition-all duration-300 hover:bg-azul/80"
+            className="inline-block px-10 py-4 bg-azul text-white font-poppins font-bold text-xl rounded-lg transition-all duration-300 hover:bg-azul/80"
           >
             Escribir por WhatsApp
           </a>

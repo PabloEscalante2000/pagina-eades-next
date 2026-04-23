@@ -15,7 +15,7 @@ export default function DescarteV2Page() {
     <div className="overflow-x-hidden">
       {/* LINK INICIO */}
       <div className="absolute top-0 left-0 z-20 px-6 py-5">
-        <Link href="/inicio" className="font-poppins text-sm text-white/80 hover:text-white transition-colors duration-200 flex items-center gap-2">
+        <Link href="/inicio" className="font-poppins text-base text-white/80 hover:text-white transition-colors duration-200 flex items-center gap-2">
           ← Volver al inicio
         </Link>
       </div>
@@ -33,14 +33,23 @@ export default function DescarteV2Page() {
           <h1 className="font-poppins font-bold text-4xl sm:text-6xl text-white leading-tight">
             No te sientes como antes… y no sabes por qué
           </h1>
-          <div className="space-y-2 font-open-sans text-lg text-white/90">
-            <p>Sigues haciendo tu vida. Cumples, trabajas, respondes.</p>
-            <p className="font-semibold">Pero algo cambió.</p>
-            <p>Te cuesta concentrarte.</p>
-            <p>Te irritas más de lo normal.</p>
-            <p>Y aunque descansas… no te sientes mejor.</p>
+          <div className="space-y-3">
+            {[
+              "Sigues haciendo tu vida. Cumples, trabajas, respondes.",
+              "Pero algo cambió.",
+              "Te cuesta concentrarte.",
+              "Te irritas más de lo normal.",
+              "Y aunque descansas… no te sientes mejor.",
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <span className="mt-1 w-2.5 h-2.5 rounded-full bg-white/80 flex-none" />
+                <p className={`font-open-sans text-xl text-white/90 leading-snug${i === 1 ? " font-semibold" : ""}`}>
+                  {item}
+                </p>
+              </div>
+            ))}
           </div>
-          <p className="font-open-sans text-base text-white/80 italic border-l-4 border-white/60 pl-4">
+          <p className="font-open-sans text-lg text-white/80 italic border-l-4 border-white/60 pl-4">
             Cuando no entiendes lo que te pasa, todo se vuelve más pesado.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
@@ -48,13 +57,13 @@ export default function DescarteV2Page() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-3 bg-white text-azul font-poppins font-bold rounded-lg transition-all duration-300 hover:bg-celeste"
+              className="px-7 py-3 bg-white text-azul font-poppins font-bold text-lg rounded-lg transition-all duration-300 hover:bg-celeste"
             >
               Agendar evaluación
             </a>
             <a
               href="#propuesta"
-              className="px-7 py-3 border-2 border-white text-white font-poppins font-bold rounded-lg transition-all duration-300 hover:bg-white/10"
+              className="px-7 py-3 border-2 border-white text-white font-poppins font-bold text-lg rounded-lg transition-all duration-300 hover:bg-white/10"
             >
               Conocer más
             </a>
@@ -70,12 +79,12 @@ export default function DescarteV2Page() {
               Entender lo que estás viviendo es el primer paso para empezar a
               sentirte mejor
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               El descarte de ansiedad, depresión o burnout es una evaluación
               clínica profesional diseñada para ayudarte a comprender con claridad
               qué está pasando contigo.
             </p>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               No se trata de etiquetar rápidamente.{" "}
               <span className="font-semibold text-azul">
                 Se trata de mirar con profundidad, criterio y cuidado
@@ -102,7 +111,7 @@ export default function DescarteV2Page() {
             <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
               🎯 ¿Qué es esta evaluación?
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               Es un espacio de evaluación clínica donde exploramos:
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -116,14 +125,14 @@ export default function DescarteV2Page() {
                   key={i}
                   className="flex items-center gap-3 bg-celeste/30 rounded-xl px-5 py-4 border border-celeste"
                 >
-                  <span className="w-2 h-2 rounded-full bg-azul flex-none" />
-                  <span className="font-open-sans text-azul font-medium text-base">
+                  <span className="w-2.5 h-2.5 rounded-full bg-azul flex-none" />
+                  <span className="font-open-sans text-azul font-medium text-lg">
                     {item}
                   </span>
                 </div>
               ))}
             </div>
-            <p className="font-open-sans text-azul/70 text-base italic">
+            <p className="font-open-sans text-azul/70 text-lg italic">
               Cuando es necesario, se utilizan instrumentos psicológicos validados
               para complementar la evaluación.
             </p>
@@ -146,7 +155,7 @@ export default function DescarteV2Page() {
           <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-white">
             🧩 ¿Qué te llevas de esta evaluación?
           </h2>
-          <p className="font-open-sans text-white/80 text-lg">
+          <p className="font-open-sans text-white/80 text-xl">
             Al finalizar, podrás tener:
           </p>
           <div className="space-y-3">
@@ -161,14 +170,14 @@ export default function DescarteV2Page() {
                 key={i}
                 className="flex items-start gap-3 bg-white/10 rounded-xl px-5 py-4 border border-white/20"
               >
-                <span className="text-celeste font-bold text-lg">✔</span>
-                <span className="font-open-sans text-white text-base leading-relaxed">
+                <span className="text-celeste font-bold text-xl">✔</span>
+                <span className="font-open-sans text-white text-lg leading-relaxed">
                   {item}
                 </span>
               </div>
             ))}
           </div>
-          <p className="font-open-sans text-white/70 text-base italic border-l-4 border-celeste pl-4 mt-6">
+          <p className="font-open-sans text-white/70 text-lg italic border-l-4 border-celeste pl-4 mt-6">
             Porque a veces, lo que más alivia… no es resolver todo de inmediato,
             sino dejar de vivir con la duda.
           </p>
@@ -182,7 +191,7 @@ export default function DescarteV2Page() {
             <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
               ⚠️ ¿Para quién es este servicio?
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               Para personas que sienten que algo no está bien, aunque no puedan
               explicarlo del todo. Por ejemplo, si estás experimentando:
             </p>
@@ -195,15 +204,15 @@ export default function DescarteV2Page() {
                 "Pensamientos repetitivos o sensación de bloqueo",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="mt-1.5 w-2 h-2 rounded-full bg-azul flex-none" />
-                  <span className="font-open-sans text-azul text-base leading-relaxed">
+                  <span className="mt-1.5 w-2.5 h-2.5 rounded-full bg-azul flex-none" />
+                  <span className="font-open-sans text-azul text-lg leading-relaxed">
                     {item}
                   </span>
                 </li>
               ))}
             </ul>
             <div className="bg-white rounded-xl p-6 border-l-4 border-azul shadow-sm">
-              <p className="font-open-sans text-azul font-medium text-base">
+              <p className="font-open-sans text-azul font-medium text-lg">
                 No necesitas estar &ldquo;muy mal&rdquo; para consultar. Muchas
                 veces, evaluar a tiempo evita que el malestar se intensifique.
               </p>
@@ -228,7 +237,7 @@ export default function DescarteV2Page() {
             <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul">
               🧠 Nuestro enfoque
             </h2>
-            <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+            <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
               En EADES, trabajamos desde una mirada clínica que integra:
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -244,14 +253,14 @@ export default function DescarteV2Page() {
                   key={i}
                   className="bg-white rounded-xl p-5 text-center shadow-sm border border-celeste space-y-2"
                 >
-                  <span className="text-3xl">{item.icono}</span>
-                  <p className="font-poppins font-bold text-azul text-sm">
+                  <span className="text-4xl">{item.icono}</span>
+                  <p className="font-poppins font-bold text-azul text-base">
                     {item.titulo}
                   </p>
                 </div>
               ))}
             </div>
-            <p className="font-open-sans text-azul/80 text-base leading-relaxed">
+            <p className="font-open-sans text-azul/80 text-lg leading-relaxed">
               Contamos con experiencia en ansiedad, depresión, crisis vitales y
               procesos complejos. Este descarte no es una solución rápida. Es una
               evaluación estructurada que te permite tomar decisiones con mayor
@@ -266,7 +275,7 @@ export default function DescarteV2Page() {
               height={500}
               className="w-full h-96 object-cover object-[center_35%] rounded-2xl shadow-lg"
             />
-            <p className="font-poppins text-sm text-azul/60 text-center">
+            <p className="font-poppins text-base text-azul/60 text-center">
               César Escalante — Director de EADES
             </p>
           </div>
@@ -300,14 +309,14 @@ export default function DescarteV2Page() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-5 bg-celeste/20 rounded-xl px-6 py-4 border border-celeste"
+                  className="flex items-center gap-5 bg-celeste/20 rounded-xl px-6 py-5 border border-celeste"
                 >
-                  <span className="text-3xl flex-none">{item.icono}</span>
+                  <span className="text-4xl flex-none">{item.icono}</span>
                   <div>
-                    <h3 className="font-poppins font-bold text-azul text-base">
+                    <h3 className="font-poppins font-bold text-azul text-xl">
                       {item.titulo}
                     </h3>
-                    <p className="font-open-sans text-azul/80 text-sm">
+                    <p className="font-open-sans text-azul/80 text-lg">
                       {item.detalle}
                     </p>
                   </div>
@@ -318,7 +327,7 @@ export default function DescarteV2Page() {
               <span className="font-poppins font-bold text-2xl text-celeste flex-none">
                 Inversión:
               </span>
-              <span className="font-open-sans text-lg">S/ 160 soles</span>
+              <span className="font-open-sans text-xl">S/ 160 soles</span>
             </div>
           </div>
           <div className="lg:w-1/2 w-full">
@@ -336,11 +345,11 @@ export default function DescarteV2Page() {
       {/* CTA INTERMEDIO */}
       <section className="bg-azul py-16 px-6 sm:px-16 text-center">
         <div className="max-w-2xl mx-auto space-y-5">
-          <p className="font-open-sans text-white/80 text-lg leading-relaxed">
+          <p className="font-open-sans text-white/80 text-xl leading-relaxed">
             No necesitas tener todo claro para empezar. Pero seguir sin entender
             lo que te pasa… suele hacerlo más pesado.
           </p>
-          <p className="font-poppins font-bold text-white text-xl">
+          <p className="font-poppins font-bold text-white text-2xl">
             A veces, el primer alivio no es una solución inmediata.{" "}
             <span className="text-celeste">Es tener claridad.</span>
           </p>
@@ -348,7 +357,7 @@ export default function DescarteV2Page() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-white text-azul font-poppins font-bold text-lg rounded-lg transition-all duration-300 hover:bg-celeste"
+            className="inline-block px-10 py-4 bg-white text-azul font-poppins font-bold text-xl rounded-lg transition-all duration-300 hover:bg-celeste"
           >
             Agendar evaluación
           </a>
@@ -384,10 +393,10 @@ export default function DescarteV2Page() {
                   key={i}
                   className="bg-white rounded-xl p-6 space-y-2 shadow-sm"
                 >
-                  <h3 className="font-poppins font-bold text-azul text-lg">
+                  <h3 className="font-poppins font-bold text-azul text-xl">
                     {item.pregunta}
                   </h3>
-                  <p className="font-open-sans text-azul/80 text-base leading-relaxed">
+                  <p className="font-open-sans text-azul/80 text-lg leading-relaxed">
                     {item.respuesta}
                   </p>
                 </div>
@@ -409,10 +418,10 @@ export default function DescarteV2Page() {
       {/* CTA FINAL */}
       <section className="bg-celeste py-24 px-6 sm:px-16 text-center">
         <div className="max-w-2xl mx-auto space-y-6">
-          <h2 className="font-poppins font-bold text-3xl sm:text-5xl text-azul leading-tight">
+          <h2 className="font-poppins font-bold text-3xl sm:text-4xl text-azul leading-tight">
             🎯 Empieza por entender lo que te está pasando
           </h2>
-          <p className="font-open-sans text-lg text-azul/80 leading-relaxed">
+          <p className="font-open-sans text-xl text-azul/80 leading-relaxed">
             Agenda tu evaluación de descarte y obtén una orientación clara,
             profesional y adaptada a ti.
           </p>
@@ -421,7 +430,7 @@ export default function DescarteV2Page() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-azul text-white font-poppins font-bold text-lg rounded-lg transition-all duration-300 hover:bg-azul/80"
+              className="px-8 py-4 bg-azul text-white font-poppins font-bold text-xl rounded-lg transition-all duration-300 hover:bg-azul/80"
             >
               👉 Agendar evaluación
             </a>
@@ -429,7 +438,7 @@ export default function DescarteV2Page() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-azul text-azul font-poppins font-bold text-lg rounded-lg transition-all duration-300 hover:bg-azul/10"
+              className="px-8 py-4 border-2 border-azul text-azul font-poppins font-bold text-xl rounded-lg transition-all duration-300 hover:bg-azul/10"
             >
               💬 Escribir por WhatsApp
             </a>

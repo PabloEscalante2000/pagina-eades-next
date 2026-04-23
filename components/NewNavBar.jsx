@@ -69,6 +69,9 @@ export default function NewNavBar() {
         <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
           <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/servicios" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/servicios"}>SERVICIOS</Link>
         </li>
+        <li className="flex justify-end items-center border-b-2 border-azul relative overflow-hidden" onClick={() => setVisible(false)}>
+          <Link className={`hover:bg-azul hover:text-marroncito transition-all duration-500 ease-in-out relative py-3 px-2 text-right w-full ${pathname === "/evaluaciones" ? "bg-azul text-marroncito":"bg-marroncito text-azul"}`} href={"/evaluaciones"}>EVALUACIONES</Link>
+        </li>
         <button aria-label="desplegar nav" className={`flex w-full justify-between items-center border-b-2 border-azul relative overflow-hidden transition-all ease-in-out duration-500 ${listaDespegable === 1 ? "bg-azul text-marroncito":""}`} onClick={() => setListaDespegable((prev) => prev === 1 ? 0 : 1)}>
           <span className="block px-3 text-lg">
             {listaDespegable === 1 ? (
@@ -118,6 +121,9 @@ export default function NewNavBar() {
         </li>
         <li>
           <Link className={`${pathname === "/servicios" ? "border-b-2 border-azul":""}`} href={"/servicios"}>SERVICIOS</Link>
+        </li>
+        <li>
+          <Link className={`${pathname === "/evaluaciones" ? "border-b-2 border-azul":""}`} href={"/evaluaciones"}>EVALUACIONES</Link>
         </li>
         <li className="relative group">
           <Link className={`${pathname.startsWith("/test") ? "border-b-2 border-azul":""}`} href={"/test"}>TEST</Link>
