@@ -9,7 +9,8 @@
       "Bash(python -c ':*)",
       "Read(//tmp/**)",
       "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v1\")",
-      "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v2\")"
+      "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v2\")",
+      "Bash(npm run *)"
     ]
   }
 }

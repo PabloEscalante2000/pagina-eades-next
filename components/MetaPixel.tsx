@@ -2,9 +2,9 @@
 
 import Script from 'next/script'
 import { usePathname, useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 
-export default function MetaPixel() {
+function MetaPixelTracker() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -14,6 +14,10 @@ export default function MetaPixel() {
     }
   }, [pathname, searchParams])
 
+  return null
+}
+
+export default function MetaPixel() {
   return (
     <>
       <Script id="meta-pixel" strategy="afterInteractive">
@@ -39,6 +43,9 @@ export default function MetaPixel() {
           alt=""
         />
       </noscript>
+      <Suspense fallback={null}>
+        <MetaPixelTracker />
+      </Suspense>
     </>
   )
 }
