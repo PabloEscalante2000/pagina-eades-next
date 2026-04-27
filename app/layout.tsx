@@ -4,6 +4,7 @@ import Footer from "@/components/Footer"
 
 import "./globals.css";
 import PromoPopup from "@/components/PromoPopUp";
+import MetaPixel from "@/components/MetaPixel";
 
 export const metadata : Metadata = {
   title: "EADES | Centro Psicoterapéutico",
@@ -31,6 +32,7 @@ export default function RootLayout({
         {children}
         <Footer/>
         {/* <PromoPopup/> */}
+        <MetaPixel/>
       </body>
     </html>
   );
