@@ -74,12 +74,6 @@ function Footer() {
             EADESPeru
           </p>
         </div>
-        <div className={`flex flex-col justify-center items-center text-center cursor-pointer`} onClick={() => setPop(!pop)}>
-          <Image src="/libro.png" alt="libro de reclamaciones" width={80} height={80} className="w-20"/>
-          <p>
-            Libro de <br/> Reclamaciones
-          </p>
-        </div>
       </section>
       <div className="border-t border-azul/20 mt-5 pt-4 text-sm text-azul/60">
         <Link href="/politica-privacidad" className="hover:text-azul transition-colors">
