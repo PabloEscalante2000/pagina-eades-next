@@ -5,6 +5,7 @@ import Footer from "@/components/Footer"
 import "./globals.css";
 import PromoPopup from "@/components/PromoPopUp";
 import MetaPixel from "@/components/MetaPixel";
+import GoogleTagManager, { GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
 
 export const metadata : Metadata = {
   title: "EADES | Centro Psicoterapéutico",
@@ -28,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${poppins.variable} ${openSans.variable} ${breathing.variable}`}>
+      <head>
+        <GoogleTagManager/>
+      </head>
       <body>
+        <GoogleTagManagerNoScript/>
         {children}
         <Footer/>
         {/* <PromoPopup/> */}
