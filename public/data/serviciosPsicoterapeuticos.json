@@ -1,14 +1,14 @@
 [
     {
       "nombre":"Terapia<br/>Individual",
-      "img":"/assets/terapia-individual.jpg",
+      "img":"/assets/terapia-individual.png",
       "ubi":"bs-1",
       "isPseres": false,
       "link": null
     },
     {
       "nombre":"Terapia de Pareja<br/>y Familiar",
-      "img":"/assets/terapia-de-pareja.jpg",
+      "img":"/assets/terapia-de-pareja.png",
       "ubi":"bs-2",
       "isPseres": false,
       "link": null
