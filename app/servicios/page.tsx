@@ -4,8 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "EADES | Centro Psicoterapéutico | Servicios",
-  description: "Conoce los servicios de EADES: terapia psicológica individual, de pareja y familiar, neuropsicología, atención a niños, adolescentes y adultos. Enfoque integral y personalizado, con terapias presenciales y online. Mejora tu bienestar mental con nuestro equipo profesional.",
+  title: "Terapia Psicológica Lima | Servicios | EADES Centro Psicoterapéutico",
+  description: "Terapia psicológica en Lima para ansiedad, depresión, estrés y terapia de pareja. Psicólogo económico en Lima con atención presencial y terapia psicológica online Perú. Enfoque integral y personalizado para adultos, adolescentes y niños.",
+  keywords: [
+    "terapia psicológica Lima",
+    "psicoterapia Lima Perú",
+    "terapia para ansiedad Lima",
+    "psicólogo para depresión Lima",
+    "terapia de pareja Lima",
+    "ayuda psicológica estrés",
+    "psicólogo económico en Lima",
+    "terapia psicológica online Perú",
+    "centro psicológico Lima",
+  ],
 };
 
 function ServiciosPage() {
@@ -17,7 +28,7 @@ function ServiciosPage() {
         <div className="absolute top-0 left-0 z-10 w-full">
           <NewNavBar />
         </div>
-        <h1 className="sm:text-5xl text-3xl font-poppins text-azul sm:p-10 p-5 bg-marroncito/80 sm:m-10 m-5 max-w-[600px] font-bold">Conoce nuestros serivicios psicoterapéuticos</h1>
+        <h1 className="sm:text-5xl text-3xl font-poppins text-azul sm:p-10 p-5 bg-marroncito/80 sm:m-10 m-5 max-w-[600px] font-bold">Terapia psicológica en Lima: conoce nuestros servicios psicoterapéuticos</h1>
       </main>
       <section className="mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

@@ -8,6 +8,33 @@ import Image from "next/image"
 import diferencias from "@/public/data/diferencias.json"
 import serviciosPsicoterapeuticos from "@/public/data/serviciosPsicoterapeuticos.json"
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "EADES | Psicólogo en Lima | Centro Psicoterapéutico",
+  description: "Centro psicológico en Lima con más de 25 años de experiencia. Terapia psicológica para ansiedad, depresión, estrés y terapia de pareja. Psicólogo recomendado en Lima, con atención presencial y online. Agenda tu cita hoy.",
+  keywords: [
+    "psicólogo en Lima",
+    "centro psicológico Lima",
+    "terapia psicológica Lima",
+    "psicoterapia Lima Perú",
+    "terapia para ansiedad Lima",
+    "psicólogo para depresión Lima",
+    "terapia de pareja Lima",
+    "ayuda psicológica estrés",
+    "psicólogo económico en Lima",
+    "terapia psicológica online Perú",
+    "psicólogo recomendado en Lima",
+  ],
+  openGraph: {
+    title: "EADES | Psicólogo en Lima | Centro Psicoterapéutico",
+    description: "Centro psicológico en Lima con más de 25 años de experiencia. Terapia psicológica para ansiedad, depresión, estrés y terapia de pareja. Psicólogo recomendado en Lima, con atención presencial y online.",
+    url: "https://grupoeades.org/inicio",
+    siteName: "EADES | Centro Psicoterapéutico",
+    locale: "es_PE",
+    type: "website",
+  },
+};
 
 function InicioPage() {
 
@@ -86,28 +113,28 @@ function InicioPage() {
           {[
             {
               img: "/assets/loq-1.jpg",
-              alt: "Ansiedad y estados depresivos",
+              alt: "Terapia para ansiedad y depresión en Lima",
               num: "01",
-              titulo: "Ansiedad y estados depresivos",
-              texto: "Crisis personales que comienzan a afectar la vida cotidiana.",
+              titulo: "Ansiedad y depresión",
+              texto: "Terapia para ansiedad y depresión en Lima: acompañamiento cuando estas crisis comienzan a afectar tu vida cotidiana.",
             },
             {
               img: "/assets/loq-2.jpg",
-              alt: "Conflictos vinculares",
+              alt: "Terapia de pareja Lima",
               num: "02",
-              titulo: "Conflictos vinculares",
-              texto: "Dinámicas relacionales que tienden a repetirse en distintos vínculos.",
+              titulo: "Terapia de pareja y vínculos",
+              texto: "Dinámicas relacionales y conflictos de pareja que tienden a repetirse. Terapia de pareja en Lima con enfoque integral.",
             },
             {
               img: "/assets/loq-3.jpg",
-              alt: "Regular emociones",
+              alt: "Ayuda psicológica para el estrés y regulación emocional",
               num: "03",
-              titulo: "Regulación emocional",
-              texto: "Dificultades para sostener decisiones o construir una relación más estable con uno mismo.",
+              titulo: "Estrés y regulación emocional",
+              texto: "Ayuda psicológica para el estrés y dificultades para sostener decisiones o construir una relación más estable con uno mismo.",
             },
             {
               img: "/assets/evaluaciones-psicologicas.jpg",
-              alt: "Evaluaciones psicológicas",
+              alt: "Evaluaciones psicológicas en Lima",
               num: "04",
               titulo: "Evaluaciones psicológicas",
               texto: "Para precisar el funcionamiento emocional o cognitivo cuando el diagnóstico lo requiere.",

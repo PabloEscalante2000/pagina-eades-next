@@ -4,8 +4,18 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata = {
-  title: "EADES | Centro Psicoterapéutico | Quiénes Somos",
-  description: "Blog EADES: artículos sobre psicología, salud mental, bienestar emocional y desarrollo personal. Consejos, reflexiones y contenido profesional para ayudarte a crecer, sanar y conocerte mejor. Información confiable para tu salud mental.",
+  title: "Blog de Psicología en Lima | Ansiedad, Depresión y Más | EADES",
+  description: "Blog de psicología EADES: artículos sobre terapia para ansiedad en Lima, psicólogo para depresión, ayuda psicológica para el estrés y cómo tratar la ansiedad sin medicamentos. Contenido profesional para tu salud mental.",
+  keywords: [
+    "terapia para ansiedad Lima",
+    "psicólogo para depresión Lima",
+    "ayuda psicológica estrés",
+    "cómo tratar la ansiedad sin medicamentos",
+    "psicólogo en Lima",
+    "terapia psicológica online Perú",
+    "blog psicología Lima",
+    "salud mental Lima",
+  ],
 };
 
 export default function BlogPage() {

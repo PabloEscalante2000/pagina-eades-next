@@ -28,12 +28,12 @@ const preguntasFrecuentes = [
     {
       preg:"¿Tienen tarifa social?",
       icon:faUserGear,
-      res:"Sí, contamos con una tarifa social (además de la tarifa regular)."
+      res:"Sí. Contamos con tarifa social para quienes lo necesiten. Somos un psicólogo económico en Lima sin comprometer la calidad del proceso terapéutico."
     },
     {
       preg:"¿La psicoterapia es online o solo presencial?",
       icon:faDesktop,
-      res:"La terapia puede hacerce de manera online o presencial "
+      res:"Ofrecemos terapia psicológica online (Perú y el mundo) y también atención presencial en Lima. Tú eliges el formato que mejor se adapte a tu ritmo."
     },
     {
       preg:"¿El centro ofrece terapia para niños/adolescentes?",

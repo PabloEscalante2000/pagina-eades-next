@@ -4,8 +4,16 @@ import Image from "next/image"
 import styles from "./page.module.css"
 
 export const metadata = {
-  title: "EADES | Centro Psicoterapéutico | Quiénes Somos",
-  description: "EADES — Equipo de psicólogos expertos en salud mental: conocé a nuestros profesionales, misión y valores. Compromiso con la salud emocional, confidencialidad y cuidado integral. Descubre por qué somos tu mejor opción para acompañarte en tu proceso terapéutico.",
+  title: "Psicólogo Recomendado en Lima | Quiénes Somos | EADES",
+  description: "Conoce al equipo de EADES, centro psicológico en Lima con psicólogos recomendados y especializados en salud mental. Más de 25 años acompañando procesos terapéuticos: ansiedad, depresión, pareja y más. Psicoterapia Lima Perú con enfoque integral.",
+  keywords: [
+    "psicólogo recomendado en Lima",
+    "centro psicológico Lima",
+    "psicólogo en Lima",
+    "psicoterapia Lima Perú",
+    "terapia psicológica Lima",
+    "equipo psicólogos Lima",
+  ],
 };
 
 
