@@ -57,7 +57,7 @@ function Footer() {
           </p>
           <p>
             <FontAwesomeIcon icon={faLocationDot} />{" "}
-            Pasaje El Pacayar 149, La Aurora - Miraflores
+            General Silva 570 - Miraflores
           </p>
         </div>
         <div>
