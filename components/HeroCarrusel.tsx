@@ -9,7 +9,7 @@ import Link from "next/link"
 const slides = [
   {
     bg: "/assets/IMG_4924.jpg",
-    text: "Psicoterapia para comprender lo que sientes y transformar tu experiencia.",
+    text: "Centro de psicoterapia en Lima — comprende lo que sientes y transforma tu vida.",
   },
   {
     bg: "/assets/bg-3.jpg",

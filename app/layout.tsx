@@ -12,27 +12,10 @@ export const metadata : Metadata = {
   title: "EADES | Psicólogo en Lima | Centro Psicoterapéutico",
   description: "EADES – Centro psicológico en Lima especializado en terapia psicológica individual, de pareja y familiar. Psicoterapia Lima Perú con enfoque integral: ansiedad, depresión, estrés y más. Atención presencial y online. Agenda tu cita hoy.",
   icons: "/favicon.ico",
-  keywords: [
-    "psicólogo en Lima",
-    "centro psicológico Lima",
-    "terapia psicológica Lima",
-    "psicoterapia Lima Perú",
-    "terapia para ansiedad Lima",
-    "psicólogo para depresión Lima",
-    "terapia de pareja Lima",
-    "ayuda psicológica estrés",
-    "psicólogo económico en Lima",
-    "terapia psicológica online Perú",
-    "cómo tratar la ansiedad sin medicamentos",
-    "psicólogo recomendado en Lima",
-    "psicología",
-    "psicoanálisis",
-    "salud mental",
-  ],
   openGraph: {
     title: "EADES | Psicólogo en Lima | Centro Psicoterapéutico",
     description: "EADES – Centro psicológico en Lima especializado en terapia psicológica individual, de pareja y familiar. Psicoterapia Lima Perú con enfoque integral: ansiedad, depresión, estrés y más. Atención presencial y online. Agenda tu cita hoy.",
-    url: "https://grupoeades.org/",
+    url: "https://eadespsicoterapia.com/",
     siteName: "EADES | Centro Psicoterapéutico",
     locale: "es_PE",
     type: "website",
@@ -49,6 +32,51 @@ export default function RootLayout({
       <head>
         <GoogleTagManager/>
         <GoogleAnalytics/>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["LocalBusiness", "MedicalOrganization"],
+              "name": "EADES Centro Psicoterapéutico",
+              "url": "https://eadespsicoterapia.com",
+              "description": "Centro psicológico en Lima especializado en psicoterapia individual, de pareja y familiar. Más de 25 años de experiencia en salud mental.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "General Silva 570",
+                "addressLocality": "Miraflores",
+                "addressRegion": "Lima",
+                "addressCountry": "PE"
+              },
+              "telephone": "+51930509438",
+              "priceRange": "$$",
+              "medicalSpecialty": "Psicología clínica y psicoterapia"
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "César Escalante Sifuentes",
+              "jobTitle": "Psicólogo Clínico y Psicoterapeuta",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "EADES Centro Psicoterapéutico"
+              },
+              "description": "Psicólogo clínico, psicoterapeuta psicoanalítico y magíster en neuropsicología con más de 25 años de experiencia en educación y salud mental.",
+              "memberOf": [
+                { "@type": "Organization", "name": "Sociedad Interamericana de Psicología (SIP)" },
+                { "@type": "Organization", "name": "Centro Intercultural de Londres (LIC)" },
+                { "@type": "Organization", "name": "Asociación Internacional de Terapeutas (IAOTH)" },
+                { "@type": "Organization", "name": "Asociación Europea de Psicología Aplicada (EAAP)" },
+                { "@type": "Organization", "name": "Sociedad Internacional de Neuropsicoanálisis" }
+              ]
+            })
+          }}
+        />
       </head>
       <body>
         <GoogleTagManagerNoScript/>

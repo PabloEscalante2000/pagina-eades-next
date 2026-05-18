@@ -20,7 +20,7 @@ export default function PoliticaPrivacidadPage() {
             <h2 className="font-poppins font-semibold text-xl">1. Responsable del tratamiento</h2>
             <p>
               <strong>EADES Centro Psicoterapéutico</strong> es el responsable del tratamiento de los datos
-              personales que recopilamos a través de este sitio web (<em>grupoeades.org</em>).
+              personales que recopilamos a través de este sitio web (<em>eadespsicoterapia.com</em>).
             </p>
             <p>
               Para cualquier consulta relacionada con el tratamiento de tus datos puedes contactarnos en:{" "}

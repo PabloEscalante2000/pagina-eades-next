@@ -4,14 +4,6 @@ import {content5} from "@/public/data/BlogContentData"
 export const metadata = {
   title: "Trastornos de Personalidad | Psicólogo en Lima | EADES",
   description: "Información sobre trastornos de personalidad desde el centro psicológico EADES en Lima. Psicólogo en Lima especializado en psicoterapia con enfoque integral para adultos. Terapia psicológica Lima Perú presencial y online.",
-  keywords: [
-    "psicólogo en Lima",
-    "terapia psicológica Lima",
-    "psicoterapia Lima Perú",
-    "centro psicológico Lima",
-    "psicólogo recomendado en Lima",
-    "trastornos personalidad Lima",
-  ],
 };
 
 function ArticuloUno () {

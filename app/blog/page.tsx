@@ -6,16 +6,6 @@ import Image from "next/image"
 export const metadata = {
   title: "Blog de Psicología en Lima | Ansiedad, Depresión y Más | EADES",
   description: "Blog de psicología EADES: artículos sobre terapia para ansiedad en Lima, psicólogo para depresión, ayuda psicológica para el estrés y cómo tratar la ansiedad sin medicamentos. Contenido profesional para tu salud mental.",
-  keywords: [
-    "terapia para ansiedad Lima",
-    "psicólogo para depresión Lima",
-    "ayuda psicológica estrés",
-    "cómo tratar la ansiedad sin medicamentos",
-    "psicólogo en Lima",
-    "terapia psicológica online Perú",
-    "blog psicología Lima",
-    "salud mental Lima",
-  ],
 };
 
 export default function BlogPage() {

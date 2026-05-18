@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /_next/
 
-Sitemap: https://grupoeades.org/sitemap.xml
+Sitemap: https://eadespsicoterapia.com/sitemap.xml

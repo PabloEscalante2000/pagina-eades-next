@@ -6,17 +6,6 @@ import Link from "next/link";
 export const metadata = {
   title: "Terapia Psicológica Lima | Servicios | EADES Centro Psicoterapéutico",
   description: "Terapia psicológica en Lima para ansiedad, depresión, estrés y terapia de pareja. Psicólogo económico en Lima con atención presencial y terapia psicológica online Perú. Enfoque integral y personalizado para adultos, adolescentes y niños.",
-  keywords: [
-    "terapia psicológica Lima",
-    "psicoterapia Lima Perú",
-    "terapia para ansiedad Lima",
-    "psicólogo para depresión Lima",
-    "terapia de pareja Lima",
-    "ayuda psicológica estrés",
-    "psicólogo económico en Lima",
-    "terapia psicológica online Perú",
-    "centro psicológico Lima",
-  ],
 };
 
 function ServiciosPage() {

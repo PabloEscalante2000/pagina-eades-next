@@ -13,33 +13,58 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "EADES | Psicólogo en Lima | Centro Psicoterapéutico",
   description: "Centro psicológico en Lima con más de 25 años de experiencia. Terapia psicológica para ansiedad, depresión, estrés y terapia de pareja. Psicólogo recomendado en Lima, con atención presencial y online. Agenda tu cita hoy.",
-  keywords: [
-    "psicólogo en Lima",
-    "centro psicológico Lima",
-    "terapia psicológica Lima",
-    "psicoterapia Lima Perú",
-    "terapia para ansiedad Lima",
-    "psicólogo para depresión Lima",
-    "terapia de pareja Lima",
-    "ayuda psicológica estrés",
-    "psicólogo económico en Lima",
-    "terapia psicológica online Perú",
-    "psicólogo recomendado en Lima",
-  ],
   openGraph: {
     title: "EADES | Psicólogo en Lima | Centro Psicoterapéutico",
     description: "Centro psicológico en Lima con más de 25 años de experiencia. Terapia psicológica para ansiedad, depresión, estrés y terapia de pareja. Psicólogo recomendado en Lima, con atención presencial y online.",
-    url: "https://grupoeades.org/inicio",
+    url: "https://eadespsicoterapia.com/inicio/",
     siteName: "EADES | Centro Psicoterapéutico",
     locale: "es_PE",
     type: "website",
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto dura cada sesión?",
+      "acceptedAnswer": { "@type": "Answer", "text": "De 45 a 60 minutos." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los métodos de pago?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aceptamos transferencias bancarias, tarjeta de crédito (recargo del 5%)." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia con otro tipo de terapia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hacemos un seguimiento constante al paciente. El terapeuta siempre va a estar dispuesto a conversar con el paciente, incluso fuera del horario de las sesiones." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tienen tarifa social?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí. Contamos con tarifa social para quienes lo necesiten. Somos un psicólogo económico en Lima sin comprometer la calidad del proceso terapéutico." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La psicoterapia es online o solo presencial?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ofrecemos terapia psicológica online (Perú y el mundo) y también atención presencial en Lima. Tú eliges el formato que mejor se adapte a tu ritmo." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El centro ofrece terapia para niños y adolescentes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, gracias a la colaboración de PSERES ofrecemos servicios a niños y adolescentes." }
+    }
+  ]
+};
+
 function InicioPage() {
 
   return (
     <div className="overflow-x-hidden">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="relative">
         <div className=" top-0 left-0 z-10 w-full">
           <NewNavBarLoader />
