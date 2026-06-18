@@ -1,264 +1,178 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import Swal from "sweetalert2";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import TestResult from "./TestResult";
+import NewNavBarLoader from "./NewNavBarLoader";
+
+const tipoLabel = (tipo) => {
+  if (tipo === "depresión") return "Depresión";
+  if (tipo === "tlp") return "TLP";
+  return "Ansiedad";
+};
 
 export default function BloqueTest({ test, tipo }) {
-
   const [position, setPosition] = useState(0);
-  const [miarray, setMiArray] = useState([]);
+  const [selections, setSelections] = useState({});
+  const [nivel, setNivel] = useState("");
+  const [end, setEnd] = useState(false);
+  const [showError, setShowError] = useState(false);
 
-  //Valores para el resultado
-  const [nivel,setNivel] = useState("")
-  const [end,setEnd] = useState(false)
+  const currentSelections = selections[position] || [];
+  const currentQ = test[position];
+  const isLastQuestion = position === test.length - 1;
+  const progressPct = Math.round((position / test.length) * 100);
 
-  const mostarErrorVacio = () => {
-    Swal.fire({
-      icon: "error",
-      title: "Tienes que seleccionar al menos una alternativa",
-    });
+  const toggleOption = (index) => {
+    if (currentQ.tipo === "radio") {
+      setSelections(prev => ({ ...prev, [position]: [index] }));
+    } else {
+      const current = selections[position] || [];
+      const updated = current.includes(index)
+        ? current.filter(i => i !== index)
+        : [...current, index];
+      setSelections(prev => ({ ...prev, [position]: updated }));
+    }
+    setShowError(false);
   };
 
-  const mostrarGuardadExitoso = () => {
-    Swal.fire({
-      title: "¿Quieres terminar el test?",
-      showDenyButton: true,
-      showCancelButton: true,
-      confirmButtonText: "Sí",
-      denyButtonText: `No`,
-    }).then((result) => {
-      /* Read more about isConfirmed, isDenied below */
-      if (result.isConfirmed) {
-        imprenta();
-        let resAlt = [];
-        for (var i = 0; i < test.length; i++) {
-          let respuestas = [];
+  const isSelected = (index) => currentSelections.includes(index);
 
-          miarray[i].map((e) => {
-            respuestas = [...respuestas, test[i].respuestas[e]];
-          });
+  const handleNext = () => {
+    if (currentSelections.length === 0) { setShowError(true); return; }
 
-          let valor = {
-            titulo: test[i].titulo,
-            respuestas: respuestas,
-          };
-
-          resAlt = [...resAlt, valor];
-        }
-
-        let res_nivel = 0
-        for(let i = 0; i < test.length; i++){
-          const middle = (test[i].respuestas.length - 1) / 2
-          const tot_array = miarray[i].reduce((total,num)=>{
-            return total + (num - middle)
-          },0)
-          res_nivel = res_nivel + tot_array
-        }
-
-        if(res_nivel > 3) {
-          setNivel("bajo")
-        } else if (res_nivel < 3 && res_nivel > -3) {
-          setNivel("medio")
-        } else if(res_nivel < -3){
-          setNivel("alto")
-        }
-        
-      } else if (result.isDenied) {
-        console.log(".")
+    if (isLastQuestion) {
+      let total = 0;
+      for (let i = 0; i < test.length; i++) {
+        const sel = selections[i] || [];
+        const middle = (test[i].respuestas.length - 1) / 2;
+        total += sel.reduce((sum, num) => sum + (num - middle), 0);
       }
-    });
-  };
-
-  const verificacion = () => {
-    var inputs = document.getElementsByName("grupo");
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs[i].checked) {
-        return true;
-      }
-    }
-    return false;
-  };
-
-  const guardado = () => {
-    var inputs = document.getElementsByName("grupo");
-    var array = miarray;
-    var seleccionado = [];
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs[i].checked) {
-        seleccionado = [...seleccionado, i];
-      }
-    }
-    array[position] = seleccionado;
-    setMiArray(array);
-  };
-
-  const seleccion = () => {
-    var inputs = document.getElementsByName("grupo");
-    for (var i = 0; i < inputs.length; i++) {
-      if (miarray[position] !== undefined) {
-        if (miarray[position].includes(i)) {
-          inputs[i].checked = true;
-        } else {
-          inputs[i].checked = false;
-        }
-      } else {
-        inputs[i].checked = false;
-      }
+      if (total > 3) setNivel("bajo");
+      else if (total >= -3) setNivel("medio");
+      else setNivel("alto");
+      setEnd(true);
+    } else {
+      setPosition(p => p + 1);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
-  const imprenta = () => {
-    let res = [];
-    for (var i = 0; i < test.length; i++) {
-      let respuestas = [];
-
-      miarray[i].map((e) => {
-        respuestas = [...respuestas, test[i].respuestas[e]];
-      });
-
-      let valor = {
-        titulo: test[i].titulo,
-        respuestas: respuestas,
-      };
-
-      res = [...res, valor];
+  const handlePrev = () => {
+    if (position > 0) {
+      setPosition(p => p - 1);
+      setShowError(false);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
-    const manejarRes = () => {
-    };
-
-    manejarRes();
   };
 
-  useEffect(() => {
-    seleccion();
-  }, [position]);
-
-  useEffect(() => {
-    setPosition(0);
-    setMiArray([]);
-  }, [test]);
-
-  useEffect(()=>{
-    if(nivel !== ""){
-      setEnd(true)
-    }
-  },[nivel])
-
-  useEffect(()=>{
-    if(end){
-      resultadoDiv()
-    }
-  },[end])
-
-  const resultadoDiv = () => {
-    const targetElement = document.getElementById("resultado")
-      if(targetElement){
-        targetElement.scrollIntoView({behavior:"smooth"})
-      }
+  if (end) {
+    return (
+      <div className="min-h-dvh bg-marroncito flex flex-col">
+        <NewNavBarLoader />
+        <TestResult tipo={tipo} nivel={nivel} />
+      </div>
+    );
   }
 
   return (
-    <>
-    <div id="tit-preg">
-      {end ? (<div id="resultado"><TestResult tipo={tipo} nivel={nivel}/></div>) : (
-        <div>
-        {test[position] !== undefined ? (
-          <section className={`section-test ${tipo === "ansiedad" ? "bg-ansiedad":tipo === "tlp" ? "bg-tlp":"bg-depresion"}`}>
-            <div className="space-y-10 px-5">
-            <h3 className="uppercase font-poppins text-azul text-4xl block font-bold py-3 px-5 rounded-xl bg-white w-full text-center ">TEST DE {tipo}</h3>
-            <form
-              className="shadow-lg bg-white/95"
-              onSubmit={(e) => {
-                e.preventDefault();
-                if (position !== test.length - 1 && verificacion()) {
-                  guardado();
-                  setPosition(position + 1);                  
-                } else if (position === test.length - 1 && verificacion()) {
-                  guardado();
-                  mostrarGuardadExitoso();
-                  
-                  console.log(miarray);
-                } else if (!verificacion()) {
-                  mostarErrorVacio();
-                  console.log("falta rellenar los datos");
-                }
-  
-                const targetElement = document.getElementById("tit-preg")
-                if(targetElement){
-                  targetElement.scrollIntoView({behavior:"smooth"})
-                }
-              }}
-            >
-              
-              {position !== 0 && (
-                <button
-                className="test-regresar"
-                onClick={() => {
-                  if (position !== 0 && verificacion()) {
-                    guardado();
-                    setPosition(position - 1);
-                  } else if (!verificacion()) {
-                    mostarErrorVacio();
-                    console.log("rellena los datos");
-                  }
-                }}
-                >
-                    <div>
-                      <FontAwesomeIcon icon={faChevronLeft} /> Regresar{" "}
-                    </div>
-                </button>
-              )}
-              
-              <h1 >{test[position].titulo}</h1>
-              {test[position].respuestas.map((e, index) => {
-                if (test[position].tipo === "radio") {
-                  return (
-                    <div key={index}>
-                      <input
-                        type="radio"
-                        id={"opcion" + index + "pos" + position}
-                        name="grupo"
-                        value={e}
-                      />
-                      <label htmlFor={"opcion" + index + "pos" + position}>
-                        {e}
-                      </label>
-                    </div>
-                  );
-                } else if (test[position].tipo === "check") {
-                  return (
-                    <div key={index}>
-                      <input
-                        type="checkbox"
-                        id={"opcion" + index + "pos" + position}
-                        name="grupo"
-                        value={e}
-                      />
-                      <label htmlFor={"opcion" + index + "pos" + position}>
-                        {e}
-                      </label>
-                    </div>
-                  );
-                } else {
-                  return "";
-                }
-              })}
-              <button className="test-siguiente">
-                {position !== test.length - 1 ? "Continuar" : "Terminar Test"}
-              </button>
-            </form>
-            </div>
-          </section>
-        ) : (
-          setPosition(0)
-        )}
+    <div className="min-h-dvh bg-marroncito flex flex-col">
+      <NewNavBarLoader />
+
+      {/* Header band */}
+      <div className="bg-azul text-white pt-8 pb-7 px-5 text-center">
+        <p className="font-open-sans text-celeste/80 text-xs uppercase tracking-widest mb-2">
+          Test psicológico
+        </p>
+        <h1 className="font-poppins font-bold text-2xl sm:text-3xl">
+          Test de {tipoLabel(tipo)}
+        </h1>
       </div>
-      ) }   
-    </div>   
-    </> 
+
+      {/* Progress bar */}
+      <div className="w-full bg-celeste/40 h-1.5">
+        <div
+          className="bg-azul h-1.5 transition-all duration-500 ease-out"
+          style={{ width: `${progressPct}%` }}
+        />
+      </div>
+
+      {/* Counter */}
+      <div className="max-w-2xl mx-auto w-full px-5 pt-5 pb-1 flex justify-between text-azul/60 font-open-sans text-sm">
+        <span>Pregunta {position + 1} de {test.length}</span>
+        <span>{progressPct}% completado</span>
+      </div>
+
+      {/* Question + answers */}
+      <div className="flex-1 px-5 py-4 flex flex-col items-center pb-12">
+        <div className="w-full max-w-2xl">
+          <h2 className="font-poppins font-bold text-azul text-xl sm:text-2xl leading-snug mb-2">
+            {currentQ.titulo}
+          </h2>
+          <p className="font-open-sans text-sm text-azul/50 italic mb-6">
+            {currentQ.tipo === "check"
+              ? "Puedes marcar más de una opción"
+              : "Selecciona la opción que más te representa"}
+          </p>
+
+          <div className="space-y-3">
+            {currentQ.respuestas.map((respuesta, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => toggleOption(index)}
+                className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-all duration-200 flex items-start gap-4 cursor-pointer ${
+                  isSelected(index)
+                    ? "border-azul bg-azul text-white shadow-md"
+                    : "border-celeste bg-white text-azul hover:border-azul/50 hover:shadow-sm"
+                }`}
+              >
+                {/* Custom radio/check indicator */}
+                <span className={`mt-0.5 flex-none w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${
+                  isSelected(index) ? "border-white" : "border-azul"
+                }`}>
+                  {isSelected(index) && (
+                    <span className="w-2.5 h-2.5 rounded-full bg-white block" />
+                  )}
+                </span>
+                <span className="font-open-sans text-base leading-relaxed">{respuesta}</span>
+              </button>
+            ))}
+          </div>
+
+          {showError && (
+            <p className="mt-4 text-red-500 font-open-sans text-sm">
+              ⚠ Selecciona al menos una opción para continuar.
+            </p>
+          )}
+
+          {/* Navigation */}
+          <div className="flex justify-between items-center mt-8">
+            <button
+              type="button"
+              onClick={handlePrev}
+              disabled={position === 0}
+              className={`flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-azul font-poppins font-bold text-sm transition-all duration-200 ${
+                position === 0
+                  ? "opacity-30 cursor-not-allowed text-azul"
+                  : "text-azul hover:bg-azul hover:text-white"
+              }`}
+            >
+              <FontAwesomeIcon icon={faChevronLeft} />
+              Anterior
+            </button>
+            <button
+              type="button"
+              onClick={handleNext}
+              className="flex items-center gap-2 px-6 py-3 rounded-xl bg-azul text-white font-poppins font-bold text-sm transition-all duration-200 hover:bg-azul/80 active:scale-95"
+            >
+              {isLastQuestion ? "Ver resultado" : "Siguiente"}
+              {!isLastQuestion && <FontAwesomeIcon icon={faChevronRight} />}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

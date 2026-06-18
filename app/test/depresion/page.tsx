@@ -3,7 +3,7 @@ import testDepresion from "@/public/data/testDepresion.json"
 
 function DepresionTest(){
     return (
-        <BloqueTest tipo={"ansiedad"} test={testDepresion}></BloqueTest>        
+        <BloqueTest tipo={"depresión"} test={testDepresion}></BloqueTest>
     )
 }
 

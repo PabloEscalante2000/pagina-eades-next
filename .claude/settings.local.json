@@ -10,7 +10,12 @@
       "Read(//tmp/**)",
       "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v1\")",
       "Bash(mkdir -p \"c:/Users/grupo/Documents/proy_programacion/react/pagina-eades-next/app/descarte-v2\")",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Skill(run)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/inicio)",
+      "Bash(curl *)",
+      "Bash(node *)",
+      "Bash(npx *)"
     ]
   }
 }
