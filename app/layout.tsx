@@ -82,7 +82,6 @@ export default function RootLayout({
         <GoogleTagManagerNoScript/>
         {children}
         <Footer/>
-        <PromoPopup/>
         <MetaPixel/>
       </body>
     </html>
