@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const slides = [
   {
-    bg: "/assets/IMG_4924.jpg",
+    bg: "/assets/slide_puh.jpg",
     text: "Centro de psicoterapia en Lima — comprende lo que sientes y transforma tu vida.",
   },
   {

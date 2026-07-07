@@ -13,7 +13,7 @@ function ServiciosPage() {
   return (
     <div className="overflow-x-hidden overflow-y-hidden">
 
-      <main className=" relative pri-serv h-dvh w-screen flex justify-end flex-col bg-cover bg-top " id="bs">
+      <main className=" relative pri-serv h-dvh w-screen flex justify-end flex-col bg-cover bg-top ">
         <div className="absolute top-0 left-0 z-10 w-full">
           <NewNavBar />
         </div>
