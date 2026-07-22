@@ -20,7 +20,7 @@ const evaluaciones = [
     descripcion:
       "Evaluación clínica de primer nivel para identificar si lo que estás viviendo corresponde a ansiedad, depresión u otro proceso emocional. Incluye análisis de sintomatología y entrega de informe con próximos pasos.",
     detalle: [
-      "60 min: Evaluación — análisis de sintomatología física y emocional.",
+      "60 - 90 min: Evaluación diagnóstica estrucuturada TDAH.",
       "30 min: Entrega de informe de resultados y orientación.",
     ],
     tag: "Punto de partida",
@@ -87,9 +87,9 @@ const evaluaciones = [
     descripcion:
       "Evaluación diagnóstica para TDAH en adultos. Incluye diagnóstico clínico, perfil atencional y de funciones ejecutivas, e informe detallado con recomendaciones.",
     detalle: [
-      "2 primeras sesiones de 1h 20min cada una.",
-      "Diagnóstico + perfil atencional y funciones ejecutivas.",
-      "Informe profesional y sesión de devolución.",
+      "60 - 90 min: Evaluación diagnóstica estrucuturada TDAH adulto (DSM-5).",
+      "50 - 60 min: Funciones ejecutivas y el funcionamiento de la corteza prefrontal, midiendo capacidades como el control de impulsos, la toma de decisiones, la memoria de trabajo, la planeación y la flexibilidad mental.",
+      "60 -120 min: Perfil cognitivo, descarte diferencial"
     ],
     tag: "Solo presencial",
     color: "border-azul",
