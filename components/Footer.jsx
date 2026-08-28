@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLocationDot, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faXmark, faBook } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -75,9 +75,17 @@ function Footer() {
           </p>
         </div>
       </section>
-      <div className="border-t border-azul/20 mt-5 pt-4 text-sm text-azul/60">
+      <div className="border-t border-azul/20 mt-5 pt-4 text-sm text-azul/60 flex flex-wrap items-center gap-5">
         <Link href="/politica-privacidad" className="hover:text-azul transition-colors">
           Política de Privacidad
+        </Link>
+        <Link
+          href="/libro-de-reclamaciones"
+          className="hover:text-azul transition-colors flex items-center gap-2"
+          title="Libro de Reclamaciones"
+        >
+          <FontAwesomeIcon icon={faBook} />
+          Libro de Reclamaciones
         </Link>
       </div>
     </footer>
